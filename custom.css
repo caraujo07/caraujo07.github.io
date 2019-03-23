@@ -1,0 +1,28 @@
+.qrcode-text-btn {
+    display: inline-block;
+    height: 128px;
+    width: 128px;
+    background: url('./qr.png') 50% 50% no-repeat;
+    cursor: pointer;
+  }
+  
+  .qrcode-text-btn > input[type=file] {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  
+  .qrcode-text {
+    padding-right: 1.7em;
+    
+    vertical-align: middle;
+  }
+  
+  .qrcode-text + .qrcode-text-btn {
+   
+    margin-left: 30px;
+    vertical-align: middle;
+  }
+  
