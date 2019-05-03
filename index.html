@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Clube JC</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Modal SAIBA MAIS -->
+  <div class="modal fade" id="modalSaiba" tabindex="-1" role="dialog" aria-labelledby="modalSaiba" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/x.png" alt="Fechar"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-9 offset-3">
+            <h5>Saiba mais</h5>
+          </div>
+          <div class="lista">
+            <p>Vantagens de ser parceiro JC Clube</p>
+            <ul>
+              <li>Visibilidade da marca para um público de 18 mil pessoas físicas.</li>
+              <li>Direcionamento para o seu site, diretamente do JC Clube.</li>
+              <li>Os assinantes podem avaliar sua marca. As mais bem pontuadas ganham banner no site <a
+                  href="#">jcclube.com.br</a></li>
+              <li>Visibilidade também em ações de marketing direto.</li>
+              <li>Descontos para anunciar nos veículos do SJCC.</li>
+            </ul>
+            <h6>Entre em contato pelo email <a href="#">jcclube@jc.com.br</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal PARCEIROS -->
+  <div class="modal fade" id="modalParceiros" tabindex="-1" role="dialog" aria-labelledby="modalParceiros"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/x.png" alt="Fechar"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-10 offset-1">
+            <h5>Conheça alguns parceiros</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <section class="parceiros">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid" src="img/card-modal.jpg" alt="">
+                  <h6>Nome do parceiro</h6>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/card-modal.jpg" alt="">
+                  <h6>Nome do parceiro</h6>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/card-modal.jpg" alt="">
+                  <h6>Nome do parceiro</h6>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/card-modal.jpg" alt="">
+                  <h6>Nome do parceiro</h6>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal CADASTRO FINALIZADO -->
+  <div class="modal fade" id="modalFim" tabindex="-1" role="dialog" aria-labelledby="modalFim" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/x.png" alt="Fechar"></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modalFinalizar">
+            <div class="col-10 offset-2">
+              <img src="img/bigcheck.png" alt="Cadastro finalizado com sucesso!">
+            </div>
+            <div>
+              <h4>Cadastro finalizado com sucesso</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div class="header">
+          <h1><img src="img/clubejc-logo.png" alt="Clube JC"></h1>
+          <h2>Quer ampliar suas vendas?</h2>
+          <p>O clube de assinantes do JC oferece descontos e produtos para uma audiência formadora de opinião.</p>
+        </div>
+        <a class="mt-3" href="#" data-toggle="modal" data-target="#modalSaiba">Saiba mais</a>
+        <a class="mt-3" href="#" data-toggle="modal" data-target="#modalParceiros">Conheça alguns parceiros</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1">
+          <h2>Faça o seu pré cadastro preenchendo o formulário abaixo:</h2>
+          <form id="registration">
+            <fieldset>
+              <div class="form-row">
+                <div class="form-group col-md-6 customform">
+
+                  <label for="inputName">Nome</label>
+                  <input type="text" class="form-control" id="inputName" name="nome" data-validation="length alphanumeric" data-validation-allowing=" éáàãú." data-validation-length="3-49" data-validation-error-msg="O nome deve conter no mínimo três caracteres">
+                
+
+                </div>
+                <div class="form-group col-md-6 customform">
+                  <label for="inputCnpj">CNPJ</label>
+                  <input type="number" class="form-control" id="inputCnpj" data-validation="custom" data-validation-regexp="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" data-validation-error-msg="O CNPJ inserido não é válido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 customform">
+                  <label for="inputEndereco">Endereço</label>
+                  <input type="text" class="form-control" id="inputEndereco"  data-validation="length alphanumeric" data-validation-allowing=" " data-validation-length="5-49" data-validation-error-msg="O endereço deve conter no mínimo cinco caracteres">
+                </div>
+                <div class="form-group col-md-6 customform">
+                  <label for="inputComplemento">Complemento</label>
+                  <input type="text" class="form-control" id="inputComplemento" data-validation="length alphanumeric" data-validation-allowing=" " data-validation-length="2-15" data-validation-error-msg="O endereço deve conter no mínimo dois caracteres">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 customform">
+                  <label for="inputCidade">Cidade</label>
+                  <select id="inputCidade" class="form-control">
+                    <option value=" "> </option>
+                    <option value="Jaboatão dos Guararapes">Jaboatão dos Guararapes</option>
+                    <option value="Olinda">Olinda</option>
+                    <option value="Caruaru">Caruaru</option>
+                    <option value="Petrolina">Petrolina</option>
+                    <option value="Paulista">Paulista</option>
+                    <option value="Cabo de Santo Agostinho">Cabo de Santo Agostinho</option>
+                    <option value="Camaragibe">Camaragibe</option>
+                    <option value="Garanhuns">Garanhuns</option>
+                    <option value="Vitória de Santo Antão">Vitória de Santo Antão</option>
+                    <option value="Igarassu">Igarassu</option>
+                    <option value="São Lourenço da Mata">São Lourenço da Mata</option>
+                    <option value="Santa Cruz do Capibaribe">Santa Cruz do Capibaribe</option>
+                    <option value="Abreu e Lima">Abreu e Lima</option>
+                    <option value="Ipojuca">Ipojuca</option>
+                    <option value="Serra Talhada">Serra Talhada</option>
+                    <option value="Araripina">Araripina</option>
+                    <option value="Gravatá">Gravatá</option>
+                    <option value="Carpina">Carpina</option>
+                    <option value="Goiana">Goiana</option>
+                    <option value="Belo Jardim">Belo Jardim</option>
+                    <option value="Arcoverde">Arcoverde</option>
+                    <option value="Ouricuri">Ouricuri</option>
+                    <option value="Escada">Escada</option>
+                    <option value="Pesqueira">Pesqueira</option>
+                    <option value="Surubim">Surubim</option>
+                    <option value="Palmares">Palmares</option>
+                    <option value="Moreno">Moreno</option>
+                    <option value="Bezerros">Bezerros</option>
+                    <option value="Salgueiro">Salgueiro</option>
+                    <option value="São Bento do Una">São Bento do Una</option>
+                    <option value="Buíque">Buíque</option>
+                    <option value="Limoeiro">Limoeiro</option>
+                    <option value="Paudalho">Paudalho</option>
+                    <option value="Timbaúba">Timbaúba</option>
+                    <option value="Brejo da Madre de Deus">Brejo da Madre de Deus</option>
+                    <option value="Bom Conselho">Bom Conselho</option>
+                    <option value="Ribeirão">Ribeirão</option>
+                    <option value="Sirinhaém">Sirinhaém</option>
+                    <option value="Toritama">Toritama</option>
+                    <option value="Águas Belas">Águas Belas</option>
+                    <option value="Barreiros">Barreiros</option>
+                    <option value="Catende">Catende</option>
+                    <option value="Santa Maria da Boa Vista">Santa Maria da Boa Vista</option>
+                    <option value="Lajedo">Lajedo</option>
+                    <option value="Bom Jardim">Bom Jardim</option>
+                    <option value="Aliança">Aliança</option>
+                    <option value="Bonito">Bonito</option>
+                    <option value="Bodocó">Bodocó</option>
+                    <option value="São Caitano">São Caitano</option>
+                    <option value="Afogados da Ingazeira">Afogados da Ingazeira</option>
+                    <option value="Custódia">Custódia</option>
+                    <option value="Água Preta">Água Preta</option>
+                    <option value="Itambé">Itambé</option>
+                    <option value="Petrolândia">Petrolândia</option>
+                    <option value="Sertânia">Sertânia</option>
+                    <option value="Cabrobó">Cabrobó</option>
+                    <option value="São José do Belmonte">São José do Belmonte</option>
+                    <option value="São José do Egito">São José do Egito</option>
+                    <option value="João Alfredo">João Alfredo</option>
+                    <option value="Floresta">Floresta</option>
+                    <option value="Vicência">Vicência</option>
+                    <option value="Nazaré da Mata">Nazaré da Mata</option>
+                    <option value="Exu">Exu</option>
+                    <option value="Gameleira">Gameleira</option>
+                    <option value="Ipubi">Ipubi</option>
+                    <option value="Glória do Goitá">Glória do Goitá</option>
+                    <option value="Trindade">Trindade</option>
+                    <option value="Ibimirim">Ibimirim</option>
+                    <option value="Passira">Passira</option>
+                    <option value="Caetés">Caetés</option>
+                    <option value="Taquaritinga do Norte">Taquaritinga do Norte</option>
+                    <option value="Tabira">Tabira</option>
+                    <option value="Tupanatinga">Tupanatinga</option>
+                    <option value="Pombos">Pombos</option>
+                    <option value="Panelas">Panelas</option>
+                    <option value="Itapissuma">Itapissuma</option>
+                    <option value="Itaíba">Itaíba</option>
+                    <option value="Condado">Condado</option>
+                    <option value="Sanharó">Sanharó</option>
+                    <option value="Quipapá">Quipapá</option>
+                    <option value="Ilha de Itamaracá">Ilha de Itamaracá</option>
+                    <option value="Tacaratu">Tacaratu</option>
+                    <option value="Lagoa Grande">Lagoa Grande</option>
+                    <option value="Macaparana">Macaparana</option>
+                    <option value="Canhotinho">Canhotinho</option>
+                    <option value="Agrestina">Agrestina</option>
+                    <option value="Cupira">Cupira</option>
+                    <option value="Orobó">Orobó</option>
+                    <option value="Rio Formoso">Rio Formoso</option>
+                    <option value="Tamandaré">Tamandaré</option>
+                    <option value="Altinho">Altinho</option>
+                    <option value="Itajá">Itajá</option>
+                    <option value="Amaraji">Amaraji</option>
+                    <option value="São João">São João</option>
+                    <option value="Flores">Flores</option>
+                    <option value="Pedra">Pedra</option>
+                    <option value="Feira Nova">Feira Nova</option>
+                    <option value="Parnamirim">Parnamirim</option>
+                    <option value="Chã Grande">Chã Grande</option>
+                    <option value="Lagoa de Itaenga">Lagoa de Itaenga</option>
+                    <option value="São Joaquim do Monte">São Joaquim do Monte</option>
+                    <option value="Manari">Manari</option>
+                    <option value="São José da Coroa Grande">São José da Coroa Grande</option>
+                    <option value="Belém do São Francisco">Belém do São Francisco</option>
+                    <option value="Vertentes">Vertentes</option>
+                    <option value="Riacho das Almas">Riacho das Almas</option>
+                    <option value="Araçoiaba">Araçoiaba</option>
+                    <option value="Cachoeirinha">Cachoeirinha</option>
+                    <option value="Capoeiras">Capoeiras</option>
+                    <option value="Carnaíba">Carnaíba</option>
+                    <option value="Afrânio">Afrânio</option>
+                    <option value="Iati">Iati</option>
+                    <option value="Serrita">Serrita</option>
+                    <option value="Dormentes">Dormentes</option>
+                    <option value="Camocim de São Félix">Camocim de São Félix</option>
+                    <option value="Venturosa">Venturosa</option>
+                    <option value="Correntes">Correntes</option>
+                    <option value="São Vicente Ferrer">São Vicente Ferrer</option>
+                    <option value="Lagoa do Carro">Lagoa do Carro</option>
+                    <option value="Jataúba">Jataúba</option>
+                    <option value="Itaquitinga">Itaquitinga</option>
+                    <option value="Lagoa dos Gatos">Lagoa dos Gatos</option>
+                    <option value="Joaquim Nabuco">Joaquim Nabuco</option>
+                    <option value="Machados">Machados</option>
+                    <option value="Saloá">Saloá</option>
+                    <option value="São Benedito do Sul">São Benedito do Sul</option>
+                    <option value="Frei Miguelinho">Frei Miguelinho</option>
+                    <option value="Jurema">Jurema</option>
+                    <option value="Mirandiba">Mirandiba</option>
+                    <option value="Triunfo">Triunfo</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Primavera">Primavera</option>
+                    <option value="Orocó">Orocó</option>
+                    <option value="Jupi">Jupi</option>
+                    <option value="Jatobá">Jatobá</option>
+                    <option value="Xexéu">Xexéu</option>
+                    <option value="Alagoinha">Alagoinha</option>
+                    <option value="Santa Filomena">Santa Filomena</option>
+                    <option value="Ferreiros">Ferreiros</option>
+                    <option value="Casinhas">Casinhas</option>
+                    <option value="Barra de Guabiraba">Barra de Guabiraba</option>
+                    <option value="Santa Maria do Cambucá">Santa Maria do Cambucá</option>
+                    <option value="Tracunhaém">Tracunhaém</option>
+                    <option value="Itapetim">Itapetim</option>
+                    <option value="Chã de Alegria">Chã de Alegria</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Lagoa do Ouro">Lagoa do Ouro</option>
+                    <option value="Tacaimbó">Tacaimbó</option>
+                    <option value="Carnaubeira da Penha">Carnaubeira da Penha</option>
+                    <option value="Betânia">Betânia</option>
+                    <option value="Cortês">Cortês</option>
+                    <option value="Santa Cruz da Baixa Verde">Santa Cruz da Baixa Verde</option>
+                    <option value="Iguaracy">Iguaracy</option>
+                    <option value="Belém de Maria">Belém de Maria</option>
+                    <option value="Santa Terezinha">Santa Terezinha</option>
+                    <option value="Cedro">Cedro</option>
+                    <option value="Jaqueira">Jaqueira</option>
+                    <option value="Cumaru">Cumaru</option>
+                    <option value="Paranatama">Paranatama</option>
+                    <option value="Maraial">Maraial</option>
+                    <option value="Jucati">Jucati</option>
+                    <option value="Poção">Poção</option>
+                    <option value="Moreilândia">Moreilândia</option>
+                    <option value="Calçado">Calçado</option>
+                    <option value="Angelim">Angelim</option>
+                    <option value="Salgadinho">Salgadinho</option>
+                    <option value="Sairé">Sairé</option>
+                    <option value="Terra Nova">Terra Nova</option>
+                    <option value="Verdejante">Verdejante</option>
+                    <option value="Brejão">Brejão</option>
+                    <option value="Camutanga">Camutanga</option>
+                    <option value="Tuparetama">Tuparetama</option>
+                    <option value="Palmeirina">Palmeirina</option>
+                    <option value="Ibirajuba">Ibirajuba</option>
+                    <option value="Vertente do Lério">Vertente do Lério</option>
+                    <option value="Brejinho">Brejinho</option>
+                    <option value="Granito">Granito</option>
+                    <option value="Terezinha">Terezinha</option>
+                    <option value="Quixaba">Quixaba</option>
+                    <option value="Solidão">Solidão</option>
+                    <option value="Calumbi">Calumbi</option>
+                    <option value="Itacuruba">Itacuruba</option>
+                    <option value="Ingazeira">Ingazeira</option>
+                    <option value="Fernando de Noronha">Fernando de Noronha</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4 customform">
+                  <label for="inputEstado">Estado</label>
+                  <select id="inputEstado" class="form-control">
+                    <!-- <option disabled selected>Estado</option> -->
+                    <option value=" "></option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="ES">Estrangeiro</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2 customform">
+                  <label for="inputWebsite">Website</label>
+                  <input type="text" class="form-control" id="inputWebsite" data-validation="url" data-validation-error-msg="Tente https://dominio.com">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4 customform">
+                  <label for="inputFb">Página do Facebook</label>
+                  <input type="text" class="form-control" id="inputFb"  data-validation="url" data-validation-error-msg="Tente https://facebook.com/seu-usuario">
+                </div>
+                <div class="form-group col-md-4 customform">
+                  <label for="inputIg">Instagram</label>
+                  <input type="text" class="form-control" id="inputIg" data-validation="length alphanumeric" data-validation-allowing="-._" data-validation-length="4-49" data-validation-error-msg="Utilize o seu usuário do Instagram">
+                </div>
+                <div class="form-group col-md-4 customform txtarea">
+                  <label for="textArea">Mensagem</label>
+                  <textarea class="form-control" id="textArea" rows="5"
+                    placeholder="Proposta da empresa (descontos, produtos, sorteios, ingressos, etc...)" data-validation="length alphanumeric" data-validation-allowing=" éáàãú.,-_/\" data-validation-length="10-149" data-validation-error-msg="A mensagem deve conter entre 10 e 149 caracteres"></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+
+            <fieldset id="secondForm">
+              <h2>Dados do responsável:</h2>
+
+              <p>Você é o responsável legal? </p>
+              <div class="form-check form-check-inline pb-4">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioSim" value="option1" required>
+                <label class="form-check-label pr-5" for="radioSim">Sim</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioNo" value="option1" required>
+                <label class="form-check-label" for="radioNo">Não</label>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4 customform">
+                  <label for="inputName02">Nome</label>
+                  <input type="text" class="form-control" id="inputName02" data-validation="length alphanumeric" data-validation-allowing=" éáàãú." data-validation-length="3-49" data-validation-error-msg="O nome deve conter no mínimo três caracteres">
+                </div>
+                <div class="form-group col-md-4 customform">
+                  <label for="inputEmail02">E-Mail</label>
+                  <input type="email" class="form-control" id="inputEmail02" data-validation="email" data-validation-error-msg="O E-mail digitado é inválido.">
+                </div>
+                <div class="form-group col-md-4 customform">
+                  <label for="inputTel">Telefone</label>
+                  <input type="number" class="form-control" id="inputTel">
+                </div>
+                <p>Estou ciente de que as informações coletadas pelo JC Clube serão usadas para viabilizar o processo de
+                  parceria.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radioAgree" id="radioAgree1" value="option1">
+                  <label class="form-check-label pb-5" for="radioAgree1">
+                    Concordo
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-row pb-4">
+              <button type="submit" class="btn btn-success col-12" data-toggle="modal" data-target="#modalFim">finalizar
+                cadastro</button>
+            </div>
+          </form>
+          
+          <script>
+            $.validate({
+              form : '#registration'
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('form .form-group input,form .form-group select,form .form-group textarea').each(function () {
+        $(this).focus(function () {
+          trataFocus();
+          $('label', $(this).parent()).addClass('focused');
+          console.log('focused');
+        });
+        $(this).blur(function () {
+          trataFocus();
+        });
+      });
+    });
+
+    function trataFocus() {
+      $('form .form-group input,form .form-group select,form .form-group textarea').each(function () {
+        if ($(this).val() == '') {
+          $('label', $(this).parent()).removeClass('focused');
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
