@@ -1,0 +1,174 @@
+header #top-bar {
+  height: 40px;
+  width: 100%;
+  background: #FF5158;
+}
+
+header #top-bar div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header #top-bar div ul:first-child {
+  padding-top: 2px;
+}
+
+header #top-bar div ul, nav#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header #top-bar div ul li {
+  padding: 6px 15px;
+  color: #FFF;
+  font-size: 14px;
+}
+
+header #top-bar ul a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+}
+
+header #top-bar ul a:hover svg path {
+  fill: rgba(255, 255, 255, .8);
+}
+
+/* MENU */
+
+.navbar {
+  background: #FFF;
+}
+
+.navbar a {
+  color: #707070;
+}
+
+.navbar li a {
+ font-size: 18px;
+ padding: 5px 15px;
+}
+
+.navbar-brand:hover {
+  opacity: .9;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  font-size: 1.3rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 2rem;
+}
+
+.icon-bar {
+	width: 30px; 
+	height: 4px;
+	background-color: #707070;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  outline: none;
+}
+ 
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.toggle-wrapper {
+  display: inline-block;
+}
+
+body {
+  background: #000;
+}
+
+@media only screen and (min-width: 990px) {
+  .navbar li a {
+    position: relative;
+  }
+  
+  .navbar li a::before, .navbar li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #FF5158;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+  }
+  
+  .navbar li a::before {
+    top: 0;
+    transform: translateY(-10px);
+  }
+  
+  .navbar li a::after {
+    bottom: 0;
+    transform: translateY(10px);
+  }
+  
+  .navbar li a:hover:before, .navbar li a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .nav-item {
+    padding: 20px;
+    border-bottom: 2px solid #FF5158;
+    text-align: center;
+  }
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+}
+
+
+/* PRESENTATION */
+
+.presentation {
+  height: 600px;
+  width: 100%;
+  background: url('../img/abre.jpg') no-repeat center center;
+  background-size: cover;
+}
