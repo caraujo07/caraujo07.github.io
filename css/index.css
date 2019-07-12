@@ -220,6 +220,7 @@ header #top-bar ul a:hover svg path {
   width: 180px;
   height: 48px;
   margin-top: 40px;
+  padding: 10px;
 }
 
 .presentation .btn:hover {
