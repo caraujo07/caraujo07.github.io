@@ -310,7 +310,13 @@ header #top-bar ul a:hover svg path {
   transition: all .3s;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cons h2::before {
+    left: -1%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .cons h2::before {
     left: -20%;
   }
