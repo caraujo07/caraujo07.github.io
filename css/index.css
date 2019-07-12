@@ -53,6 +53,10 @@ header #top-bar ul a:hover svg path {
  padding: 5px 15px;
 }
 
+.navbar-brand img {
+  width: 70%;
+}
+
 .navbar-brand:hover {
   opacity: .9;
 }
@@ -115,10 +119,6 @@ header #top-bar ul a:hover svg path {
   display: inline-block;
 }
 
-body {
-  background: #000;
-}
-
 @media only screen and (min-width: 990px) {
   .navbar li a {
     position: relative;
@@ -167,8 +167,61 @@ body {
 /* PRESENTATION */
 
 .presentation {
+  position: relative;
   height: 600px;
   width: 100%;
   background: url('../img/abre.jpg') no-repeat center center;
   background-size: cover;
+}
+
+.presentation::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 137px;
+  bottom: 0;
+  position: absolute;
+  background: url('../img/divisor.png') no-repeat center center;
+  background-size: cover;
+}
+
+.presentation h2 {
+  font-size: 48px;
+  color: #FFF;
+  margin-top: 60px;
+  position: relative;
+}
+
+.presentation h2::after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 7px;
+  bottom: -15px;
+  position: absolute;
+  background: #FF5158;
+  background-size: cover;
+}
+
+.presentation p:first-of-type {
+  margin-top: 60px;
+}
+
+.presentation p {
+  color: #FFF;
+  font-size: 22px;
+}
+
+.presentation .btn {
+  background: #00C066;
+  color: #FFF;
+  border-radius: 0;
+  text-transform: uppercase;
+  width: 180px;
+  height: 48px;
+  margin-top: 40px;
+}
+
+.presentation .btn:hover {
+  background: #04ac5e;
 }
