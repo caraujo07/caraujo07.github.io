@@ -5,6 +5,43 @@
   box-shadow: none;
 }
 
+.cardbtn{
+  background: none;
+  text-align: center;
+  border: 1px solid #FFF;
+  color: #FFF;
+  width: 140px;
+  height: 48px;
+  border-radius: 0;
+  padding: 10px;
+  display: block;
+  margin: 150px auto 0 auto;
+}
+
+.cardbtn:hover {
+  background: #FFF;
+  transition: all .3s;
+}
+
+
+.card {
+  margin-top: 40px;
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  border-radius: 0;
+}
+
+.card:hover {
+  opacity: .9;
+}
+
+.card h3 {
+  color: #FFF;
+  text-align: center;
+  margin-top: 10vh;
+}
+
 
 /* HEADER */
 header #top-bar {
@@ -240,12 +277,12 @@ header #top-bar ul a:hover svg path {
 
 /* CONSULTORIA */
 
-.cons {
+#cons {
   height: 80vh;
   position: relative;
 }
 
-.cons::after {
+#cons::after {
   content: '';
   display: block;
   width: 100%;
@@ -256,13 +293,13 @@ header #top-bar ul a:hover svg path {
   background-size: cover;
 }
 
-.cons h2 {
+#cons h2 {
   font-size: 48px;
   text-align: center;
   position: relative;
 }
 
-.cons h2::before {
+#cons h2::before, #trainning h2::before {
   content: '';
   display: block;
   position: absolute;
@@ -273,15 +310,19 @@ header #top-bar ul a:hover svg path {
   top: -15%;
 }
 
-.cons .intro {
+#cons .intro {
   margin-top: 40px;
 }
 
-.cons .intro p {
+#cons .intro p {
   font-size: 18px;
 }
 
-.cons .btn {
+#cons .card {
+  background: url('../img/card.jpg') no-repeat center center;
+}
+
+#cons .btn, #trainning .btn {
   display: block;
   margin: 40px auto 0 auto;
   background: #FF5158;
@@ -293,68 +334,57 @@ header #top-bar ul a:hover svg path {
   padding: 10px;
 }
 
-.cons .btn:hover {
+#cons a.cardbtn:hover {
+  color: #4893C2;
+}
+
+#cons .btn:hover, #trainning .btn:hover {
   background: rgb(221, 77, 82);
   transition: all .3s;
 }
 
-.cons a:hover {
+#cons a:hover {
   text-decoration: none;
 }
 
-.card {
-  margin-top: 40px;
-  width: 100%;
-  height: 360px;
-  background: url('../img/card.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 0;
-}
-
-.card:hover {
-  opacity: .9;
-}
-
-.card h3 {
-  color: #FFF;
-  text-align: center;
-  margin-top: 10vh;
-}
-
-.card .btn {
-  background: none;
-  border: 1px solid #FFF;
-  color: #FFF;
-  width: 140px;
-  height: 48px;
-  border-radius: 0;
-  padding: 10px;
-  display: block;
-  margin: 150px auto 0 auto;
-}
-
-.card .btn:hover {
-  background: #FFF;
-  color: #4893C2;
-  transition: all .3s;
-}
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cons h2::before {
+  #cons h2::before, #trainning h2::before {
     left: -1%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cons h2::before {
+  #cons h2::before, #trainning h2::before {
     left: -20%;
   }
 }
 
 
-/* TRAINNING */
+/* TREINAMENTOS */
 
 #trainning {
-  height: 90vh;
+  height: 100vh;
+  padding-top: 20vh;
   background: #403F3F;
+}
+
+#trainning h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+}
+
+#trainning p {
+  color: #FFF;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+#trainning .card {
+  background: url('../img/card-2.jpg') no-repeat center center;
+}
+
+#trainning a.cardbtn:hover {
+  text-decoration: none;
+  color: #00C066;
 }
