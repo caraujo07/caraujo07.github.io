@@ -1,3 +1,4 @@
+
 header #top-bar {
   height: 40px;
   width: 100%;
@@ -168,6 +169,7 @@ header #top-bar ul a:hover svg path {
 
 .presentation {
   position: relative;
+  margin-top: 140px;
   height: 600px;
   width: 100%;
   background: url('../img/abre.jpg') no-repeat center center;
@@ -185,14 +187,14 @@ header #top-bar ul a:hover svg path {
   background-size: cover;
 }
 
-.presentation h2 {
+.presentation h1 {
   font-size: 48px;
   color: #FFF;
   margin-top: 60px;
   position: relative;
 }
 
-.presentation h2::after {
+.presentation h1::after {
   content: '';
   display: block;
   width: 15%;
@@ -217,7 +219,7 @@ header #top-bar ul a:hover svg path {
   color: #FFF;
   border-radius: 0;
   text-transform: uppercase;
-  width: 180px;
+  width: 140px;
   height: 48px;
   margin-top: 40px;
   padding: 10px;
@@ -225,4 +227,85 @@ header #top-bar ul a:hover svg path {
 
 .presentation .btn:hover {
   background: #04ac5e;
+}
+
+
+/* CONSULTORIA */
+
+.cons {
+  height: 80vh;
+}
+
+.cons h2 {
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+}
+
+.cons h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 78px;
+  background: url('../img/call.png') no-repeat;
+  left: 6%;
+  top: -15%;
+}
+
+.cons .intro {
+  margin-top: 40px;
+}
+
+.cons .intro p {
+  font-size: 18px;
+}
+
+.cons .btn {
+  display: block;
+  margin: 40px auto 0 auto;
+  background: #FF5158;
+  color: #FFF;
+  text-transform: uppercase;
+  border-radius: 0; 
+  width: 140px;
+  height: 48px;
+  padding: 10px;
+}
+
+.cons .btn:hover {
+  background: rgb(221, 77, 82);
+  transition: all .3s;
+}
+
+.card {
+  margin-top: 40px;
+  width: 100%;
+  height: 360px;
+  background: #4893C2;
+  border-radius: 0;
+}
+
+.card h3 {
+  color: #FFF;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.card .btn {
+  background: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  width: 140px;
+  height: 48px;
+  border-radius: 0;
+  padding: 10px;
+  display: block;
+  margin: 150px auto 0 auto;
+}
+
+.card .btn:hover {
+  background: #FFF;
+  color: #4893C2;
+  transition: all .3s;
 }
