@@ -1,5 +1,11 @@
 /* ESTILOS GERAIS */
 
+h2 {
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+}
+
 .btn:focus, .btn:active {
   outline: none;
   box-shadow: none;
@@ -293,13 +299,7 @@ header #top-bar ul a:hover svg path {
   background-size: cover;
 }
 
-#cons h2 {
-  font-size: 48px;
-  text-align: center;
-  position: relative;
-}
-
-#cons h2::before, #trainning h2::before {
+#cons h2::before, #trainning h2::before, #who h2::before {
   content: '';
   display: block;
   position: absolute;
@@ -348,13 +348,13 @@ header #top-bar ul a:hover svg path {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #cons h2::before, #trainning h2::before {
+  #cons h2::before, #trainning h2::before, #who h2::before {
     left: -1%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #cons h2::before, #trainning h2::before {
+  #cons h2::before, #trainning h2::before, #who h2::before {
     left: -20%;
   }
 }
@@ -384,7 +384,41 @@ header #top-bar ul a:hover svg path {
   background: url('../img/card-2.jpg') no-repeat center center;
 }
 
+#trainning .card:hover a{
+  text-decoration: none;
+}
+
 #trainning a.cardbtn:hover {
   text-decoration: none;
   color: #00C066;
+}
+
+/* QUEM SOMOS */
+
+#who {
+  padding-top: 60px;
+}
+
+#who .leaf {
+  margin-top: -70px;
+}
+
+#who .leaf p {
+  text-align: center;
+}
+
+#who h2 {
+  padding-bottom: 40px;
+}
+
+#who h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+#who p {
+  padding-bottom: 40px;
 }
