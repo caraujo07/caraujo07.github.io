@@ -156,7 +156,7 @@
 }
 
 #presentation h1 {
-  font-size: 48px;
+  font-size: 32px;
   color: #FFF;
   margin-top: 60px;
   position: relative;
@@ -165,7 +165,7 @@
 #presentation h1::after {
   content: '';
   display: block;
-  width: 5vw;
+  width: 15%;
   height: 7px;
   bottom: -15px;
   position: absolute;
@@ -179,13 +179,14 @@
 
 #presentation p {
   color: #FFF;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 #presentation .btn {
   background-color: #00C066;
   color: #FFF;
   margin-top: 20px;
+  font-size: 16px;
 }
 
 #presentation .btn:hover {
@@ -206,7 +207,13 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  
+  #presentation h1 {
+    font-size: 48px;
+  }
+
+  #presentation p {
+    font-size: 22px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
