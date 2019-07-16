@@ -1,0 +1,176 @@
+/* MENUS */
+
+#redbar {
+  height: 40px;
+  width: 100%;
+  background: #FF5158;
+}
+
+#redbar div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#redbar div ul:first-child {
+  padding-top: 2px;
+  display: none;
+}
+
+#redbar div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#redbar div ul li {
+  padding: 6px 15px;
+  color: #FFF;
+  font-size: 14px;
+}
+
+#redbar ul a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navbar {
+  background: #FFF;
+}
+
+.navbar li a {
+ font-size: 18px;
+ color: #707070;
+ padding: 5px 15px;
+}
+
+.nav-item {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 70%;
+}
+
+.navbar-brand:hover {
+  opacity: .9;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  font-size: 1.3rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.menulabel {
+  color: #707070;
+}
+
+.icon-bar {
+	width: 30px; 
+	height: 4px;
+	background-color: #707070;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  outline: none;
+}
+
+.navbar-toggler .toggle-wrapper.on .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .toggle-wrapper.on .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .toggle-wrapper.on .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .toggle-wrapper.on .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .toggle-wrapper.on .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .toggle-wrapper.on .bottom-bar {
+  transform: rotate(0);
+}
+
+.toggle-wrapper {
+  display: inline-block;
+}
+
+
+
+
+/* RESPONSIVE */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  #redbar div ul:first-child {
+    display: flex!important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+.navbar li a {
+  position: relative;
+}
+
+.navbar li a::before, .navbar li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FF5158;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.navbar li a::before {
+  top: 0;
+  transform: translateY(-10px);
+}
+
+.navbar li a::after {
+  bottom: 0;
+  transform: translateY(10px);
+}
+
+.navbar li a:hover:before, .navbar li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
