@@ -1,3 +1,14 @@
+/* GENERALS */
+
+.btn {
+  width: 140px;
+  height: 48px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 0;
+  background: lightgray;
+}
+
 /* MENUS */
 
 #redbar {
@@ -12,14 +23,13 @@
 }
 
 #redbar div ul:first-child {
-  padding-top: 2px;
   display: none;
 }
 
 #redbar div ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 2px;
   display: flex;
   justify-content: flex-end;
 }
@@ -36,6 +46,11 @@
   text-decoration: none;
   color: #FFF;
 }
+
+#redbar ul a:hover svg path {
+  fill: rgba(255, 255, 255, .8);
+}
+
 
 .navbar {
   background: #FFF;
@@ -116,6 +131,65 @@
 
 .toggle-wrapper {
   display: inline-block;
+}
+
+
+/* PRESENTATION */
+
+#presentation {
+  position: relative;
+  height: 600px;
+  width: 100vw;
+  background: url('../img/abre.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#presentation::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 137px;
+  bottom: 0;
+  position: absolute;
+  background: url('../img/divisor.png') no-repeat center center;
+  background-size: cover;
+}
+
+#presentation h1 {
+  font-size: 48px;
+  color: #FFF;
+  margin-top: 60px;
+  position: relative;
+}
+
+#presentation h1::after {
+  content: '';
+  display: block;
+  width: 5vw;
+  height: 7px;
+  bottom: -15px;
+  position: absolute;
+  background: #FF5158;
+  background-size: cover;
+}
+
+#presentation p:first-of-type {
+  margin-top: 60px;
+}
+
+#presentation p {
+  color: #FFF;
+  font-size: 22px;
+}
+
+#presentation .btn {
+  background-color: #00C066;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+#presentation .btn:hover {
+  background: #04ac5e;
 }
 
 
