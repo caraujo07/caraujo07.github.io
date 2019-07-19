@@ -14,6 +14,7 @@ h2 {
   text-align: center;
   position: relative;
   padding-bottom: 40px;
+  font-weight: bold;
 }
 
 p {
@@ -282,6 +283,7 @@ p {
 
 #cons .card {
   background: url('../img/card.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #cons a.cardbtn:hover {
@@ -289,7 +291,76 @@ p {
 }
 
 
+/* TRAINNING */
+
+#trainning {
+  padding: 20vh 0 10vh 0;
+  background: #403F3F;
+  color: #FFF;
+}
+
+#trainning .card {
+  background: url('../img/card-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#trainning a.cardbtn:hover {
+  color: #00C066;
+}
+
+
+/* WHO */
+
+#who {
+  padding-top: 10vh;
+}
+
+#who .intro {
+  padding-bottom: 30px;
+}
+
+#who .leaf {
+  margin-top: -23%;
+  text-align: center;
+}
+
+#who .leaf img {
+  padding-bottom: 20px;
+}
+
+#who .leaf h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#who .leaf p {
+  font-size: 18px;
+}
+
+#who .marca-tree {
+  margin: 0 auto;
+  display: block;
+}
+
+#who .btncall {
+  background: #403F3F;
+}
+
+#who .btncall:hover {
+  background: rgb(51, 51, 51)
+}
+
+
 /* RESPONSIVE */
+
+
+
+@media (max-width: 767px) {
+  #who .leaf {
+    margin-top: initial;
+    margin-bottom: 60px;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
