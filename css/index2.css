@@ -14,7 +14,6 @@ h2 {
   text-align: center;
   position: relative;
   padding-bottom: 40px;
-  font-weight: bold;
 }
 
 p {
@@ -363,6 +362,13 @@ p {
 
 /* TEAM */
 
+#team {
+  margin-top: 60px;
+  padding: 60px;
+  color: #FFF;
+  background: #00C066;
+}
+
 #team .person {
   position: relative;
   width: 100%;
@@ -411,6 +417,18 @@ p {
 #team .socialmedia li a:hover {
   text-decoration: none;
   opacity: .5;
+}
+
+#team .btncall {
+  background:  #FFF;
+  border: 1px solid #FFF;
+  color: #00C066;
+}
+
+#team .btncall:hover {
+  background: #FFF;
+  color: #04ac5e;
+  opacity: .9;
 }
 
 
