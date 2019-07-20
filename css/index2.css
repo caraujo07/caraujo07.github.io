@@ -423,7 +423,10 @@ p {
     margin-top: initial;
     margin-bottom: 60px;
   }
-
+  
+  #team .person {
+    margin: 40px auto;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
