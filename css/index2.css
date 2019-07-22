@@ -414,6 +414,21 @@ p {
   text-align: center;
 }
 
+.ig a:hover svg #ig {
+  fill: #E9486A;
+  transition: all .3s ease;
+}
+
+.tt a:hover svg #tt {
+  fill: #1da1f2;
+  transition: all .3s ease;
+}
+
+.fb a:hover svg #fb {
+  fill: #4267b2;
+  transition: all .3s ease;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 767px) {
@@ -492,6 +507,7 @@ p {
 .footer img {
   width: 60%;
 }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
