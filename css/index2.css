@@ -368,6 +368,23 @@ p {
   color: #FFF;
 }
 
+footer {
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 103%;
+  height: 50px;
+  top: -8px;
+  left: -20px;
+  background: url('../img/ornamento.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
 .footer ul {
   padding-left: 0;
 }
