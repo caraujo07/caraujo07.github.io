@@ -374,6 +374,18 @@ p {
 
 .footer h3 {
   padding-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 20%;
+  bottom: 10px;
+  background: #FF5158;
 }
 
 .footer ul li {
@@ -382,7 +394,7 @@ p {
 
 .footer .redes li {
   display: inline; 
-  padding: 10px;
+  padding-right: 20px;
 }
 
 .footer .redes li a:hover {
@@ -408,6 +420,12 @@ p {
   #who .leaf {
     margin-top: initial;
     margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer iframe {
+    width: 100%;
   }
 }
 
