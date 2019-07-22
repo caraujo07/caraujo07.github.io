@@ -488,6 +488,10 @@ p {
   opacity: 1;
   transform: translateY(0px);
 }
+
+.footer img {
+  width: 50%;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
