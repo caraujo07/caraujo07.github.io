@@ -56,6 +56,11 @@ p {
   color: #FFF;
 }
 
+.btncall:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .cardbtn {
   background: none;
   text-align: center;
@@ -362,7 +367,7 @@ p {
 
 /* FOOTER */
 .footer {
-  padding: 50px;
+  padding: 60px 10px;
   background: #232222;
   margin-top: 60px;
   color: #FFF;
@@ -376,7 +381,7 @@ footer::before {
   content: '';
   display: block;
   position: absolute;
-  width: 103%;
+  width: 105%;
   height: 50px;
   top: -8px;
   left: -20px;
@@ -455,6 +460,12 @@ footer::before {
   }
 }
 
+@media (max-width: 576px) {
+  .leaf img {
+    width: 70%;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer iframe {
     width: 100%;
@@ -521,13 +532,90 @@ footer::before {
   transform: translateY(0px);
 }
 
+.navbar li a.active::before, .navbar li a.active::after {
+  opacity: 1;
+  transform: translateY(0px);
+
+}
+
+
+#sobre #perfil {
+  margin: 100px 0;
+  position: relative;
+}
+
+#sobre #perfil .foto {
+  position: relative;
+}
+
+#sobre #perfil .foto::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url('../img/ornamento-foto.png') no-repeat;
+  width: 100%;
+  height: 91px;
+  top: -39px;
+  right: -78%;
+}
+
+#sobre #perfil .foto::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url('../img/ornamento-foto.png') no-repeat;
+  width: 100%;
+  height: 91px;
+  bottom: -39px;
+  left: -5%;
+}
+
+#sobre #perfil .foto img {
+  margin-bottom: 0!important;
+}
+
+
 .footer img {
   width: 60%;
 }
+
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   
+}
+
+
+
+
+/* SOBRE */
+
+#sobre #presentation {
+  height: 400px;
+}
+
+#sobre #perfil h3 {
+  font-weight: bold;
+}
+
+#sobre #perfil p {
+  font-size: 18px;
+  font-family: 'Open sans', sans-serif;
+  line-height: 30px;
+}
+
+#sobre #perfil .texto {
+  margin-top: 60px;
+}
+
+#sobre #perfil .foto img {
+  border: 4px solid #4893C2;
+  display: block;
+  margin: 0 auto 60px auto;
+}
+
+#sobre #presentation {
+  background: url('../img/sobre-abre.jpg') no-repeat;
 }

@@ -8,3 +8,13 @@ const btnx = () => {
     btn.classList.remove('on');
   }
 }
+
+
+const activelink = () => {
+  const href = location.pathname.replace('/', '');
+  const el = $('.nav-link');
+  $('.nav-link[href="' + href +'"').addClass('active');
+}
+
+
+activelink();
