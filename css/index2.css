@@ -381,7 +381,7 @@ footer::before {
   content: '';
   display: block;
   position: absolute;
-  width: 105%;
+  width: 103%;
   height: 50px;
   top: -8px;
   left: -20px;
