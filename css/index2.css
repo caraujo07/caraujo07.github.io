@@ -612,3 +612,83 @@ footer {
 #sobre #presentation {
   background: url('../img/sobre-abre.jpg') no-repeat;
 }
+
+
+/* CONTATO */
+
+#contato label {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+#contato input {
+  display: block;
+  width: 100%;
+  border: 4px solid #4893c2;
+  background: none;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#contato textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #4893c2;
+  background: none;
+  padding: 7px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#contato .btncall {
+  margin: 40px 0 40px 0;
+  background: #4893c2;
+}
+
+#contato h3 {
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #4893C2;
+  font-weight: bold;
+}
+
+#contato span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#contato span:nth-of-type(2n) {
+  margin-bottom: 30px;
+}
+
+#contato ul {
+  padding: 0;
+}
+
+#contato ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#contato ul li a {
+  border: 3px solid #4893C2;
+  display: block;
+  padding: 10px;
+}
+
+#contato ul li a:hover {
+  border-color: #000;
+}
