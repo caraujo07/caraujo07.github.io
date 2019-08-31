@@ -187,6 +187,8 @@ body {
       color: $sec-color;
       text-transform: uppercase;
       font-weight: bold;
+      display: flex;
+      align-items: center;
     }
     .bdg {
       display: flex;
