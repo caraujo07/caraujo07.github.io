@@ -1,4 +1,5 @@
 $primary-color: #4EA5D9;
+$sec-color: #19647E;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -10,13 +11,61 @@ body {
     border: none;
     color: #FFF;
   }
-  #navbarSupportedContent {
-    height: 100vh;
-  }
 }
 
 
-
+#navbarSupportedContent {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all .1s linear;
+  .btnclose {
+    background: $sec-color;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+  }
+  form {
+    width: 90%;
+    div {
+      width: 100%;
+      position: relative;
+    }
+    input {
+      border-radius: 20px;
+      margin-top: 40px;
+      width: 100%;
+      color: $primary-color;
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 20px;
+      &::placeholder {
+        color: $primary-color;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: #ced4da;
+      }
+    }
+    button {
+      position: absolute;
+      top: 56%;
+      right: 4%;
+      background: #FFF;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
 
 
 

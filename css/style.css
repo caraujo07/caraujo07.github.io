@@ -11,8 +11,88 @@ body {
   color: #FFF;
 }
 
-.navbar #navbarSupportedContent {
+#navbarSupportedContent {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background: #fff;
+  width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+#navbarSupportedContent .btnclose {
+  background: #19647E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 0;
+  width: 50px;
+  height: 50px;
+}
+
+#navbarSupportedContent form {
+  width: 90%;
+}
+
+#navbarSupportedContent form div {
+  width: 100%;
+  position: relative;
+}
+
+#navbarSupportedContent form input {
+  border-radius: 20px;
+  margin-top: 40px;
+  width: 100%;
+  color: #4EA5D9;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+#navbarSupportedContent form input::-webkit-input-placeholder {
+  color: #4EA5D9;
+}
+
+#navbarSupportedContent form input:-ms-input-placeholder {
+  color: #4EA5D9;
+}
+
+#navbarSupportedContent form input::-ms-input-placeholder {
+  color: #4EA5D9;
+}
+
+#navbarSupportedContent form input::placeholder {
+  color: #4EA5D9;
+}
+
+#navbarSupportedContent form input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #ced4da;
+}
+
+#navbarSupportedContent form button {
+  position: absolute;
+  top: 56%;
+  right: 4%;
+  background: #FFF;
+  border: none;
+  cursor: pointer;
 }
 
 @media (width: 320px) {
