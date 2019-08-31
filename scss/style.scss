@@ -26,13 +26,13 @@ body {
 
 #navbarSupportedContent {
   position: absolute;
-  left: -1000px;
+  left: -500px;
   top: 0;
   background: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
-  transition: all .5s linear;
+  transition: all .2s linear;
   .btnclose {
     background: $sec-color;
     display: flex;
@@ -135,7 +135,7 @@ body {
 }
 
 
-@media (width: 320px) {
+@media (width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
   }
