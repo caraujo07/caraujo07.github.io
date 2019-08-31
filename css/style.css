@@ -42,10 +42,17 @@ body {
   border-radius: 0;
   width: 50px;
   height: 50px;
+  padding: .5rem;
+}
+
+#navbarSupportedContent img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 #navbarSupportedContent form {
-  width: 90%;
+  width: 100%;
 }
 
 #navbarSupportedContent form div {
@@ -93,6 +100,52 @@ body {
   background: #FFF;
   border: none;
   cursor: pointer;
+}
+
+.navbar-nav {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.navbar-nav .nav-item {
+  padding: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #4EA5D9;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-item.active {
+  background: #4EA5D9;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.navbar-nav::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: #CCC;
+  bottom: -5%;
+  left: 10%;
+}
+
+.social {
+  margin-top: 60px;
+}
+
+.social h5 {
+  color: #19647E;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 @media (width: 320px) {

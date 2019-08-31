@@ -1,5 +1,6 @@
 $primary-color: #4EA5D9;
 $sec-color: #19647E;
+$grey: #CCC;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -32,9 +33,15 @@ body {
     border-radius: 0;
     width: 50px;
     height: 50px;
+    padding: .5rem;
+  }
+  img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
   form {
-    width: 90%;
+    width: 100%;
     div {
       width: 100%;
       position: relative;
@@ -67,7 +74,46 @@ body {
   }
 }
 
+.navbar-nav {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 40px;
+  .nav-item {
+    padding: 15px;
+    .nav-link {
+      color: $primary-color;
+      font-size: 20px;
+    }
+    &.active {
+      background: $primary-color;
+      .nav-link {
+        color: #FFF;
+        font-weight: bold;
+      }
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: $grey;
+    bottom: -5%;
+    left: 10%;
+  }
+}
 
+
+.social {
+  margin-top: 60px;
+  h5 {
+    color: $sec-color;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
 
 
 @media (width: 320px) {
