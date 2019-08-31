@@ -13,7 +13,7 @@ body {
 
 #navbarSupportedContent {
   position: absolute;
-  left: 0px;
+  left: -1000px;
   top: 0;
   background: #fff;
   width: 100%;
@@ -24,8 +24,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 #navbarSupportedContent .btnclose {
@@ -42,6 +42,7 @@ body {
   width: 50px;
   height: 50px;
   padding: .5rem;
+  cursor: pointer;
 }
 
 #navbarSupportedContent img {
@@ -116,6 +117,10 @@ body {
 .navbar-nav .nav-item .nav-link {
   color: #4EA5D9;
   font-size: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #4EA5D9;
 }
 
 .navbar-nav .nav-item.active {
