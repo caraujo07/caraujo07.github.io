@@ -6,9 +6,18 @@ body {
   background-color: #4EA5D9;
 }
 
+.navbar .navbar-brand {
+  width: 70%;
+}
+
 .navbar .navbar-toggler {
   border: none;
   color: #FFF;
+}
+
+.navbar .navbar-toggler span:first-child {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #navbarSupportedContent {
@@ -150,6 +159,17 @@ body {
   color: #19647E;
   font-weight: normal;
   font-size: 20px;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 20px 0 60px 0;
+  list-style-type: none;
 }
 
 @media (width: 320px) {

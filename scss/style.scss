@@ -8,9 +8,18 @@ body {
 
 .navbar {
   background-color: $primary-color;
+  .navbar-brand {
+    width: 70%;
+  }
   .navbar-toggler {
     border: none;
     color: #FFF;
+    span {
+      &:first-child {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
   }
 }
 
@@ -115,6 +124,13 @@ body {
     color: $sec-color;
     font-weight: normal;
     font-size: 20px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px 0 60px 0;
+    list-style-type: none;
   }
 }
 
