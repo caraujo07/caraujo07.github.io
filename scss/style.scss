@@ -1,0 +1,28 @@
+$primary-color: #4EA5D9;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: $primary-color;
+  .navbar-toggler {
+    border: none;
+    color: #FFF;
+  }
+  #navbarSupportedContent {
+    height: 100vh;
+  }
+}
+
+
+
+
+
+
+
+@media (width: 320px) {
+  .navbar-toggler span:first-child {
+    display: none;
+  }
+}

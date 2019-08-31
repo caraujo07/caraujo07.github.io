@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #4EA5D9;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  color: #FFF;
+}
+
+.navbar #navbarSupportedContent {
+  height: 100vh;
+}
+
+@media (width: 320px) {
+  .navbar-toggler span:first-child {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
