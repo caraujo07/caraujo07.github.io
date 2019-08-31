@@ -168,8 +168,60 @@ body {
   }
 }
 
+#main {
+  margin-top: 80px;
+  .card{
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    .card-img-top {
+      border-radius: 0;
+    }
+    .card-title {
+      font-size: 20px;
+    }
+    p {
+      color: #333333;
+    }
+    .card-link {
+      font-size: 14px;
+      color: $sec-color;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .bdg {
+      display: flex;
+      .badge {
+        display: flex;
+        background: $primary-color;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: normal;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        height: 28px;
+        font-size: 15px;
+        border-radius: 0px;
+        margin: 5px 5px;
+      }
+    }
+  }
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

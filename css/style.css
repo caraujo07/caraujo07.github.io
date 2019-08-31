@@ -210,6 +210,61 @@ body {
   font-weight: normal;
 }
 
+#main {
+  margin-top: 80px;
+}
+
+#main .card {
+  border: 1px solid #CCCCCC;
+  border-radius: 0;
+}
+
+#main .card .card-img-top {
+  border-radius: 0;
+}
+
+#main .card .card-title {
+  font-size: 20px;
+}
+
+#main .card p {
+  color: #333333;
+}
+
+#main .card .card-link {
+  font-size: 14px;
+  color: #19647E;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#main .card .bdg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .card .bdg .badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #4EA5D9;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95px;
+  height: 28px;
+  font-size: 15px;
+  border-radius: 0px;
+  margin: 5px 5px;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
