@@ -173,8 +173,11 @@ body {
   .card{
     border: 1px solid #CCCCCC;
     border-radius: 0;
+    margin-bottom: 40px;
     .card-img-top {
       border-radius: 0;
+      width: 100.2%;
+      height: 178px;
     }
     .card-title {
       font-size: 20px;
@@ -206,6 +209,21 @@ body {
         border-radius: 0px;
         margin: 5px 5px;
       }
+    }
+  }
+  button {
+    background: $sec-color;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      opacity: .8;
     }
   }
 }

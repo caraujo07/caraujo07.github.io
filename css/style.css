@@ -217,10 +217,13 @@ body {
 #main .card {
   border: 1px solid #CCCCCC;
   border-radius: 0;
+  margin-bottom: 40px;
 }
 
 #main .card .card-img-top {
   border-radius: 0;
+  width: 100.2%;
+  height: 178px;
 }
 
 #main .card .card-title {
@@ -269,6 +272,23 @@ body {
   font-size: 15px;
   border-radius: 0px;
   margin: 5px 5px;
+}
+
+#main button {
+  background: #19647E;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#main button:hover {
+  opacity: .8;
 }
 
 @media (max-width: 385px) {
