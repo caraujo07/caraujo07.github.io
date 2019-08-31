@@ -24,6 +24,7 @@ body {
   position: absolute;
   left: -500px;
   top: 0;
+  z-index: 99999;
   background: #fff;
   width: 100%;
   display: -webkit-box;
@@ -172,7 +173,44 @@ body {
   list-style-type: none;
 }
 
-@media (width: 385px) {
+.carousel-indicators {
+  position: absolute;
+  bottom: -20%;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D4D4D4;
+}
+
+.carousel-indicators li.active {
+  background-color: #4EA5D9;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+  padding: 20px;
+  text-align: left;
+  bottom: -5%;
+  height: 190px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background-image: linear-gradient(transparent, black);
+}
+
+.carousel-caption h4 {
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+@media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
   }

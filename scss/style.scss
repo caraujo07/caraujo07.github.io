@@ -28,6 +28,7 @@ body {
   position: absolute;
   left: -500px;
   top: 0;
+  z-index: 99999;
   background: #fff;
   width: 100%;
   display: flex;
@@ -134,8 +135,40 @@ body {
   }
 }
 
+.carousel-indicators {
+  position: absolute;
+  bottom: -20%;
+  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D4D4D4;
+    &.active {
+      background-color: $primary-color;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
 
-@media (width: 385px) {
+.carousel-caption {
+  right: 0;
+  left: 0;
+  padding: 20px;
+  text-align: left;
+  bottom: -5%;
+  height: 190px;
+  background-image: linear-gradient(transparent, black);
+  h4 {
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
   }
