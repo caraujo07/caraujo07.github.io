@@ -278,6 +278,42 @@ body {
   }
 }
 
+
+#sobre {
+  margin-top: 40px;
+  h2 {
+    padding: 20px 20px 20px 0;
+    color: #333333;
+    font-weight: normal;
+    font-size: 28px;
+    span {
+      font-weight: bold;
+    }
+  } 
+  img {
+    border-radius: 0;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 0;
+  }
+  .card-title {
+    color: $primary-color;
+    font-size: 22px;
+  }
+  .subtitle {
+    color: #333333;
+    font-size: 18px;
+  }
+  .card-text {
+    color: #666666;
+    font-size: 16px;
+  }
+  .card-body {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;

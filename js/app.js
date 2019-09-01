@@ -7,7 +7,3 @@ function slideToggle() {
     slider.style.left = '0px';
   }
 }   
-
-
-
-
