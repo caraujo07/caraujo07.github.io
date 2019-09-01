@@ -457,6 +457,21 @@ body {
   font-weight: bold;
 }
 
+#parceiros .parceiros .owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#parceiros .parceiros .owl-carousel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #parceiros .owl-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,7 +486,7 @@ body {
 
 #parceiros .owl-prev {
   left: -13%;
-  top: 5%;
+  top: 25%;
   background: url("../assets/big-arrow-left.svg") no-repeat center center;
   width: 41px;
   height: 41px;
@@ -483,7 +498,7 @@ body {
 
 #parceiros .owl-next {
   right: -13%;
-  top: 5%;
+  top: 25%;
   background: url("../assets/big-arrow-right.svg") no-repeat center center;
   width: 41px;
   height: 41px;

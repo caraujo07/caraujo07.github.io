@@ -369,6 +369,13 @@ body {
         font-weight: bold;
       }
     }
+    .owl-carousel {
+      display: flex;
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
   .owl-item {
     display: flex;
@@ -380,7 +387,7 @@ body {
 
   .owl-prev {
     left: -13%;
-    top: 5%;
+    top: 25%;
     background: url('../assets/big-arrow-left.svg') no-repeat center center;
     width: 41px;
     height: 41px;
@@ -391,7 +398,7 @@ body {
 
   .owl-next {
       right: -13%;
-      top: 5%;
+      top: 25%;
       background: url('../assets/big-arrow-right.svg') no-repeat center center;
       width: 41px;
       height: 41px;
