@@ -240,21 +240,19 @@ body {
 
 #populares {
   margin-top: 40px;
-  .populares {
-    border: 1px solid #CCCCCC;
-  }
   h2 {
     padding: 20px;
     color: #333333;
     font-weight: normal;
     font-size: 28px;
+    border: 1px solid #CCC;
     span {
       font-weight: bold;
     }
   }
   .card {
     border-radius: 0;
-    border: 1px solid #ccc;
+    border: none;
     .card-image {
       position: relative;
       span {
@@ -267,6 +265,12 @@ body {
         background: $primary-color;
         padding: 4px 20px;
       }
+      .card-img-top {
+        border-radius: 0;
+      }
+    }
+    .card-body {
+      border: 1px solid #CCCCCC;
     }
     .noimg {
       height: 50px;

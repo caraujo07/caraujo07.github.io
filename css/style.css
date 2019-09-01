@@ -304,15 +304,12 @@ body {
   margin-top: 40px;
 }
 
-#populares .populares {
-  border: 1px solid #CCCCCC;
-}
-
 #populares h2 {
   padding: 20px;
   color: #333333;
   font-weight: normal;
   font-size: 28px;
+  border: 1px solid #CCC;
 }
 
 #populares h2 span {
@@ -321,7 +318,7 @@ body {
 
 #populares .card {
   border-radius: 0;
-  border: 1px solid #ccc;
+  border: none;
 }
 
 #populares .card .card-image {
@@ -337,6 +334,14 @@ body {
   color: #FFF;
   background: #4EA5D9;
   padding: 4px 20px;
+}
+
+#populares .card .card-image .card-img-top {
+  border-radius: 0;
+}
+
+#populares .card .card-body {
+  border: 1px solid #CCCCCC;
 }
 
 #populares .card .noimg {
