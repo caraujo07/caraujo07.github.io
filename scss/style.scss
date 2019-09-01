@@ -229,7 +229,7 @@ body {
 }
 
 
-#clima {
+#anuncio {
   margin-top: 40px;
   img {
     background: #F8F8F8;
@@ -271,9 +271,12 @@ body {
     }
     .card-body {
       border: 1px solid #CCCCCC;
+      border-top: 0;
     }
     .noimg {
       height: 50px;
+      border: 1px solid #CCC;
+      border-bottom: 0;
     }
    
     .card-title {
@@ -315,6 +318,40 @@ body {
   }
   .card-body {
     padding-left: 0;
+  }
+}
+
+#tags {
+  margin-top: 40px;
+  .badges {
+    border: 1px solid #CCC;
+    padding: 20px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .badge {
+      background: #F8F8F8;
+      color: #666;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: normal;
+      padding: 10px 10px;
+      margin: 5px 3px;
+    }
+  }
+}
+
+#facebook, #instagram {
+  margin-top: 40px;
+  .facebook, .ig {
+    border: 1px solid #ccc;
+    padding: 20px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px
+    }
   }
 }
 

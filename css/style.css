@@ -291,11 +291,11 @@ body {
   opacity: .8;
 }
 
-#clima {
+#anuncio {
   margin-top: 40px;
 }
 
-#clima img {
+#anuncio img {
   background: #F8F8F8;
   padding: 20px;
 }
@@ -342,10 +342,13 @@ body {
 
 #populares .card .card-body {
   border: 1px solid #CCCCCC;
+  border-top: 0;
 }
 
 #populares .card .noimg {
   height: 50px;
+  border: 1px solid #CCC;
+  border-bottom: 0;
 }
 
 #populares .card .card-title {
@@ -393,6 +396,45 @@ body {
 
 #sobre .card-body {
   padding-left: 0;
+}
+
+#tags {
+  margin-top: 40px;
+}
+
+#tags .badges {
+  border: 1px solid #CCC;
+  padding: 20px;
+}
+
+#tags .badges h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#tags .badges .badge {
+  background: #F8F8F8;
+  color: #666;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 10px 10px;
+  margin: 5px 3px;
+}
+
+#facebook, #instagram {
+  margin-top: 40px;
+}
+
+#facebook .facebook, #facebook .ig, #instagram .facebook, #instagram .ig {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#facebook .facebook h2, #facebook .ig h2, #instagram .facebook h2, #instagram .ig h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 @media (max-width: 385px) {
