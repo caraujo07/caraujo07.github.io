@@ -556,6 +556,7 @@ footer .footer input, footer .footer textarea {
   margin: 5px 0;
   color: #333333;
   border: none;
+  border-radius: 0;
 }
 
 footer .footer input::-webkit-input-placeholder, footer .footer textarea::-webkit-input-placeholder {
