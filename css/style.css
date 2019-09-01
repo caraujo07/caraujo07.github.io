@@ -291,6 +291,62 @@ body {
   opacity: .8;
 }
 
+#clima {
+  margin-top: 40px;
+}
+
+#clima img {
+  background: #F8F8F8;
+  padding: 20px;
+}
+
+#populares {
+  margin-top: 40px;
+}
+
+#populares .populares {
+  border: 1px solid #CCCCCC;
+}
+
+#populares h2 {
+  padding: 20px;
+  color: #333333;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+#populares h2 span {
+  font-weight: bold;
+}
+
+#populares .card {
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+#populares .card .card-image {
+  position: relative;
+}
+
+#populares .card .card-image span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #FFF;
+  background: #4EA5D9;
+  padding: 4px 20px;
+}
+
+#populares .card .noimg {
+  height: 50px;
+}
+
+#populares .card .card-title {
+  font-weight: bold;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
