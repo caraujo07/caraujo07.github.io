@@ -357,6 +357,50 @@ body {
   }
 }
 
+#parceiros {
+  margin-top: 40px;
+  .parceiros {
+    padding: 20px;
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 30px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .owl-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .owl-prev, .owl-next {
+    position:absolute;
+  }
+
+  .owl-prev {
+    left: -13%;
+    top: 5%;
+    background: url('../assets/big-arrow-left.svg') no-repeat center center;
+    width: 41px;
+    height: 41px;
+    span {
+      opacity: 0;
+    }
+  }
+
+  .owl-next {
+      right: -13%;
+      top: 5%;
+      background: url('../assets/big-arrow-right.svg') no-repeat center center;
+      width: 41px;
+      height: 41px;
+      span {
+        opacity: 0;
+      }
+  }
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;

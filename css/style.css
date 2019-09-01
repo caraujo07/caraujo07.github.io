@@ -439,6 +439,60 @@ body {
   font-weight: bold;
 }
 
+#parceiros {
+  margin-top: 40px;
+}
+
+#parceiros .parceiros {
+  padding: 20px;
+}
+
+#parceiros .parceiros h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#parceiros .parceiros h2 span {
+  font-weight: bold;
+}
+
+#parceiros .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#parceiros .owl-prev, #parceiros .owl-next {
+  position: absolute;
+}
+
+#parceiros .owl-prev {
+  left: -13%;
+  top: 5%;
+  background: url("../assets/big-arrow-left.svg") no-repeat center center;
+  width: 41px;
+  height: 41px;
+}
+
+#parceiros .owl-prev span {
+  opacity: 0;
+}
+
+#parceiros .owl-next {
+  right: -13%;
+  top: 5%;
+  background: url("../assets/big-arrow-right.svg") no-repeat center center;
+  width: 41px;
+  height: 41px;
+}
+
+#parceiros .owl-next span {
+  opacity: 0;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;

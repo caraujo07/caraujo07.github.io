@@ -7,3 +7,11 @@ function slideToggle() {
     slider.style.left = '0px';
   }
 }   
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items: 2,
+    nav: true,
+  });
+});
