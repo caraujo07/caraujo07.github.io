@@ -508,6 +508,94 @@ body {
   opacity: 0;
 }
 
+footer {
+  margin-top: 20px;
+  background: #19647E;
+  padding: 40px 0 0 0;
+}
+
+footer img {
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .footer-head {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .footer-head p {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+footer .footer {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 20px;
+}
+
+footer .footer h3 {
+  font-size: 24px;
+}
+
+footer .footer h3, footer .footer p {
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+footer .footer form {
+  margin-top: 15px;
+}
+
+footer .footer input, footer .footer textarea {
+  padding-left: 7px;
+  width: 100%;
+  margin: 5px 0;
+  color: #333333;
+  border: none;
+}
+
+footer .footer input::-webkit-input-placeholder, footer .footer textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #333333;
+  opacity: .9;
+}
+
+footer .footer input:-ms-input-placeholder, footer .footer textarea:-ms-input-placeholder {
+  font-size: 14px;
+  color: #333333;
+  opacity: .9;
+}
+
+footer .footer input::-ms-input-placeholder, footer .footer textarea::-ms-input-placeholder {
+  font-size: 14px;
+  color: #333333;
+  opacity: .9;
+}
+
+footer .footer input::placeholder, footer .footer textarea::placeholder {
+  font-size: 14px;
+  color: #333333;
+  opacity: .9;
+}
+
+footer .footer textarea {
+  height: 125px;
+}
+
+footer .footer button {
+  margin-top: 5px;
+  color: #FFF;
+  font-size: 14px;
+  background: #4EA5D9;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 4px;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
