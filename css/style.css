@@ -410,6 +410,7 @@ body {
 #tags .badges h2 {
   margin-bottom: 20px;
   font-size: 28px;
+  font-weight: bold;
 }
 
 #tags .badges .badge {
@@ -419,7 +420,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: normal;
-  padding: 10px 10px;
+  padding: 10px 8px;
   margin: 5px 3px;
 }
 
@@ -435,6 +436,7 @@ body {
 #facebook .facebook h2, #facebook .ig h2, #instagram .facebook h2, #instagram .ig h2 {
   margin-bottom: 20px;
   font-size: 28px;
+  font-weight: bold;
 }
 
 @media (max-width: 385px) {
