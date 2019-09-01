@@ -598,6 +598,89 @@ footer .footer button {
   border-radius: 4px;
 }
 
+footer .footer-info {
+  background: #EEEEEE;
+  padding: 20px 0;
+  color: #333;
+}
+
+footer .footer-info p {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+footer .footer-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .footer-info ul li {
+  border: 1px solid #333;
+  height: 40px;
+  margin: 0 5px;
+  width: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-info ul li:hover {
+  background: #333;
+}
+
+footer .footer-info ul li:hover path {
+  fill: #EEEEEE;
+}
+
+footer .footer-info ul li svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer .footer-info .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5px;
+}
+
+footer .footer-info .end .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-info .end .info span {
+  width: 10px;
+}
+
+footer .footer-info .end .info p {
+  text-align: left;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;

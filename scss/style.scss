@@ -467,6 +467,56 @@ footer {
       border-radius: 4px;
     }
   }
+  .footer-info {
+    background: #EEEEEE;
+    padding: 20px 0;
+    color: #333;
+    p {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      padding-left: 0;
+      li {
+        border: 1px solid #333;
+        height: 40px;
+        margin: 0 5px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background: #333;
+        }
+        &:hover path {
+          fill: #EEEEEE;
+        }
+        svg {
+          display: flex;
+          align-self: center;
+        }
+      }
+    }
+    .end {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+      .info {
+        display: flex;
+        align-items: center;
+        span {
+          width: 10px;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 385px) {
