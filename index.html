@@ -19,7 +19,11 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
+
+      
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0" id="mobile-nav">
       <a class="navbar-brand pl-3" href="index.html"><img class="img-fluid" src="assets/logo-mobile.png"
           alt="Blog Williames Costa"></a>
       <button class="navbar-toggler pr-3" type="button" onclick="slideToggle()">
@@ -29,7 +33,7 @@
         </div>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse d-md-none" id="navbarSupportedContent">
         <div class="btnclose" onclick="slideToggle()"><img src="assets/close.svg" alt=""></div>
 
         <div class="mt-3">
@@ -75,7 +79,7 @@
       </div>
     </nav>
 
-    <div class="bd-example">
+    <div class="bd-example d-md-none">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -122,129 +126,125 @@
 
   <main id="main" class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <img class="card-img-top"
-            src="assets/card1.jpg"
-            alt="Imagem de capa do card">
-      
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+      <div class="col-12 col-md-8">
+        <div id="post">
+          <div class="card">
+            <img class="card-img-top"
+              src="assets/card1.jpg"
+              alt="Imagem de capa do card">
+        
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
-        </div>
 
-        <div class="card">
-          <img class="card-img-top"
-            src="assets/card2.jpg"
-            alt="Imagem de capa do card">
-      
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+          <div class="card">
+            <img class="card-img-top"
+              src="assets/card2.jpg"
+              alt="Imagem de capa do card">
+        
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+          <div class="card">
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+          <div class="card">
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
-        </div>
 
-        <div class="card">
-          <img class="card-img-top"
-            src="assets/card3.jpg"
-            alt="Imagem de capa do card">
-      
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+          <div class="card">
+            <img class="card-img-top"
+              src="assets/card3.jpg"
+              alt="Imagem de capa do card">
+        
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
-        </div>
 
-        <div class="card">
-          <img class="card-img-top"
-            src="assets/card4.jpg"
-            alt="Imagem de capa do card">
-      
-          <div class="bdg card-body">
-            <span class="badge">Brasil</span>
-            <span class="badge">Economia</span> 
+          <div class="card">
+            <img class="card-img-top"
+              src="assets/card4.jpg"
+              alt="Imagem de capa do card">
+        
+            <div class="bdg card-body">
+              <span class="badge">Brasil</span>
+              <span class="badge">Economia</span> 
+            </div>
+        
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
+              <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
+                Israel Ferreira do Nascimento...</p>
+            </div>
+            <div class="card-body pt-0">
+              <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
+            </div>
           </div>
-      
-          <div class="card-body">
-            <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de</h5>
-            <p class="card-text">Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio
-              Israel Ferreira do Nascimento...</p>
-          </div>
-          <div class="card-body pt-0">
-            <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="assets/arrow-right.svg" alt=""></span></a>
-          </div>
+          <button>Mais matérias</button>
         </div>
       </div>
-      <div class="col-12">
-        <button>Mais matérias</button>
-      </div>
-    </div>
-  </main>
 
-  <section id="sobre">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+      <section class="col-12 col-md-4">
+        <div id="sobre">
           <div class="card">
             <h2><span>Sobre</span> o editor</h2>
             <img src="assets/wc.jpg" class="card-img-top" alt="Willames Costa">
@@ -253,29 +253,15 @@
               <h6 class="card-title subtitle">Editor</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-            </div>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-  </section>
-
-  <section id="anuncio" class="container">
-      <div class="row">
-        <div class="col-12">
+        <div id="anuncio">
           <img class="img-fluid" src="assets/clima.jpg" alt="">
         </div>
-      </div>
-  </section>
-
-  <section id="populares">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+        <div id="populares">
           <div class="populares">
             <h2 class="mb-0"><span>Posts</span> populares</h2>
-         
             <div class="card">
               <div class="card-image">
                 <img class="card-img-top"
@@ -318,17 +304,10 @@
                 <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo drogas</h5>
               </div>
             </div>
-
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="tags">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+        <div id="tags">
           <div class="badges">
             <h2>Tags</h2>
             <span class="badge">brasil</span>
@@ -340,43 +319,30 @@
             <span class="badge">economia</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="anuncio" class="container">
-    <div class="row">
-      <div class="col-12">
-        <img class="img-fluid" src="assets/anuncio.jpg" alt="">
-      </div>
-    </div>
-  </section>
+        <div id="anuncio">
+          <img class="img-fluid" src="assets/anuncio.jpg" alt="">
+        </div>
 
-  <section id="facebook">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+        <div id="facebook">
           <div class="facebook">
             <h2>Facebook</h2>
             <img class="img-fluid"src="assets/fbembed.jpg" alt="">
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="instagram">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="ig">
-              <h2>Instagram</h2>
-              <img class="img-fluid"src="assets/ig.jpg" alt="">
-            </div>
+
+        <div id="instagram">
+          <div class="ig">
+            <h2>Instagram</h2>
+            <img class="img-fluid"src="assets/ig.jpg" alt="">
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
+  </main>
+
+
 
 <section id="parceiros">
   <div class="container">

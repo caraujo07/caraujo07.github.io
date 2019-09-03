@@ -6,23 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-  background-color: $primary-color;
-  .navbar-brand {
-    width: 70%;
-  }
-  .navbar-toggler {
-    border: none;
-    color: #FFF;
-    span {
-      &:first-child {
-        font-size: 18px;
-        font-weight: 500;
-      }
-    }
-  }
-}
-
 
 #navbarSupportedContent {
   position: absolute;
@@ -84,37 +67,53 @@ body {
   }
 }
 
-.navbar-nav {
-  text-align: center;
-  position: relative;
-  text-transform: uppercase;
-  width: 100%;
-  margin-top: 40px;
-  .nav-item {
-    padding: 15px;
-    .nav-link {
-      color: $primary-color;
-      font-size: 20px;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-    &.active {
-      background: $primary-color;
-      .nav-link {
-        color: #FFF;
-        font-weight: bold;
+#mobile-nav {
+  background-color: $primary-color;
+  .navbar-brand {
+    width: 70%;
+  }
+  .navbar-toggler {
+    border: none;
+    color: #FFF;
+    span {
+      &:first-child {
+        font-size: 18px;
+        font-weight: 500;
       }
     }
   }
-  &::after {
-    content: '';
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    background-color: $grey;
-    bottom: -5%;
-    left: 10%;
+  .navbar-nav {
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 40px;
+    .nav-item {
+      padding: 15px;
+      .nav-link {
+        color: $primary-color;
+        font-size: 20px;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      &.active {
+        background: $primary-color;
+        .nav-link {
+          color: #FFF;
+          font-weight: bold;
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      background-color: $grey;
+      bottom: -5%;
+      left: 10%;
+    }
   }
 }
 
@@ -168,7 +167,7 @@ body {
   }
 }
 
-#main {
+#post {
   margin-top: 80px;
   .card{
     border: 1px solid #CCCCCC;
@@ -176,8 +175,8 @@ body {
     margin-bottom: 40px;
     .card-img-top {
       border-radius: 0;
-      width: 100.2%;
-      height: 178px;
+      width: 100%;
+      height: auto;
     }
     .card-title {
       font-size: 20px;
@@ -252,6 +251,7 @@ body {
   }
   .card {
     border-radius: 0;
+    padding: 0;
     border: none;
     .card-image {
       position: relative;
