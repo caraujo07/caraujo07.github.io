@@ -682,9 +682,123 @@ footer .footer-info .end .info p {
   text-align: left;
 }
 
+#desktop-nav {
+  display: none;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+  #desktop-nav .logo {
+    padding: 21px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #desktop-nav .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  #desktop-nav .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #4ea5d9;
+  }
+  #desktop-nav .nav ul {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #desktop-nav .nav ul li {
+    padding: 10px 0;
+    margin: 0 5px;
+    position: relative;
+  }
+  #desktop-nav .nav ul li a::after {
+    content: '';
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFF;
+  }
+  #desktop-nav .nav ul li:hover a {
+    font-weight: bold;
+  }
+  #desktop-nav .nav ul li:hover a::after {
+    opacity: 1;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  #desktop-nav .nav ul li a {
+    padding: 10px 20px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  #desktop-nav .nav ul li a::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  #desktop-nav form div {
+    position: relative;
+  }
+  #desktop-nav form div input {
+    border-radius: 20px;
+    border: none;
+    padding-left: 40px;
+  }
+  #desktop-nav form div input::-webkit-input-placeholder {
+    color: #19647E;
+  }
+  #desktop-nav form div input:-ms-input-placeholder {
+    color: #19647E;
+  }
+  #desktop-nav form div input::-ms-input-placeholder {
+    color: #19647E;
+  }
+  #desktop-nav form div input::placeholder {
+    color: #19647E;
+  }
+  #desktop-nav form div span {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 6%;
+    top: 13%;
+  }
+  .nav li:hover li::after {
+    opacity: 1 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
