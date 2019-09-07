@@ -191,6 +191,10 @@ body {
       font-weight: bold;
       display: flex;
       align-items: center;
+      &:hover span:last-child {
+        margin-left: 3px;
+        transition: all 100ms linear;
+      }
     }
     .bdg {
       display: flex;

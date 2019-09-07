@@ -247,6 +247,12 @@ body {
           align-items: center;
 }
 
+#post .card .card-link:hover span:last-child {
+  margin-left: 3px;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
 #post .card .bdg {
   display: -webkit-box;
   display: -ms-flexbox;
