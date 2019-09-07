@@ -718,6 +718,9 @@ footer .footer-info .end .info p {
   #parceiros .owl-prev {
     left: 0;
   }
+  #post .card .card-title {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -841,6 +844,9 @@ footer .footer-info .end .info p {
   }
   nav form {
     margin-left: 30px;
+  }
+  #post .card .card-title {
+    font-size: 32px;
   }
 }
 

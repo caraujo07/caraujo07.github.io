@@ -558,6 +558,14 @@ footer {
       left: 0;
     }
   }
+
+  #post {
+    .card {
+      .card-title {
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) { 
@@ -665,6 +673,14 @@ footer {
   nav {
     form {
       margin-left: 30px;
+    }
+  }
+
+  #post {
+    .card {
+      .card-title {
+        font-size: 32px;
+      }
     }
   }
 
