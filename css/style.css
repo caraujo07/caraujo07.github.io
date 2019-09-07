@@ -4,7 +4,7 @@ body {
 
 #navbarSupportedContent {
   position: absolute;
-  left: -1000px;
+  left: -1100px;
   top: 0;
   z-index: 99999;
   background: #fff;
@@ -211,7 +211,7 @@ body {
 }
 
 #post {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 #post .card {
@@ -486,7 +486,8 @@ body {
 }
 
 #parceiros .owl-prev {
-  left: -13%;
+  outline: none;
+  left: -10%;
   top: 25%;
   background: url("../assets/big-arrow-left.svg") no-repeat center center;
   width: 41px;
@@ -498,7 +499,8 @@ body {
 }
 
 #parceiros .owl-next {
-  right: -13%;
+  outline: none;
+  right: -10%;
   top: 25%;
   background: url("../assets/big-arrow-right.svg") no-repeat center center;
   width: 41px;
@@ -636,14 +638,19 @@ footer .footer-info ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 footer .footer-info ul li:hover {
   background: #333;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
-footer .footer-info ul li:hover path {
+footer .footer-info ul li:hover path, footer .footer-info ul li:hover rect {
   fill: #EEEEEE;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 footer .footer-info ul li svg {
@@ -686,6 +693,18 @@ footer .footer-info .end .info p {
   display: none;
 }
 
+#mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  display: block;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
@@ -693,6 +712,15 @@ footer .footer-info .end .info p {
 }
 
 @media (min-width: 768px) {
+  #parceiros .owl-next {
+    right: 0;
+  }
+  #parceiros .owl-prev {
+    left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
   #mobile-nav {
     display: none;
   }
@@ -760,7 +788,7 @@ footer .footer-info .end .info p {
     padding: 10px 20px;
     color: #FFF;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
   }
   #desktop-nav .nav ul li a::before {
     display: block;
@@ -797,8 +825,29 @@ footer .footer-info .end .info p {
     left: 6%;
     top: 13%;
   }
-  .nav li:hover li::after {
-    opacity: 1 !important;
+  .footer-info .end {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-head, footer .footer:last-child {
+    border: none;
+  }
+  nav form {
+    margin-left: 30px;
+  }
+}
+
+@media (width: 1024px) {
+  #desktop-nav .nav ul li a {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
