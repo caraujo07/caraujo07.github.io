@@ -984,6 +984,145 @@ footer .footer-info .end .info p {
   display: none;
 }
 
+#notfound {
+  width: 100%;
+  margin: 0;
+}
+
+#notfound h2 {
+  margin-bottom: 0;
+  color: #19647E;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#notfound span {
+  font-size: 170px;
+  line-height: 140px;
+  text-align: center;
+  font-weight: 300;
+  display: block;
+  color: #4EA5D9;
+}
+
+#notfound p {
+  color: #707070;
+}
+
+#notfound p:first-of-type {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+#res {
+  margin: 50px auto;
+}
+
+#res h2 {
+  font-size: 24px;
+  color: #19647E;
+  font-weight: normal;
+}
+
+#res h2 strong {
+  font-weight: bold;
+}
+
+#res p {
+  color: #6D6767;
+  font-size: 20px;
+}
+
+#res p span {
+  font-weight: bold;
+}
+
+#res p::first-of-type {
+  margin: 20px 0;
+}
+
+#res h3 {
+  display: none;
+}
+
+#res h4 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4EA5D9;
+}
+
+#res ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#res ul li {
+  margin-left: 15px;
+  position: relative;
+}
+
+#res ul li p {
+  font-size: 14px;
+  color: #6d6767;
+  margin-bottom: .5rem;
+}
+
+#res ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #19647E;
+  border-radius: 50%;
+  bottom: 30%;
+  left: -15px;
+}
+
+#res form {
+  margin-top: 30px;
+  position: relative;
+}
+
+#res form input {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#res form input::active {
+  outline: #4EA5D9;
+}
+
+#res form input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #4EA5D9;
+}
+
+#res form input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #4EA5D9;
+}
+
+#res form input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #4EA5D9;
+}
+
+#res form input::placeholder {
+  font-weight: bold;
+  color: #4EA5D9;
+}
+
+#res form button {
+  position: absolute;
+  right: 5%;
+  background: none;
+  border: none;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
@@ -1178,6 +1317,29 @@ footer .footer-info .end .info p {
     padding: 5px 15px;
     font-size: 15px;
     margin: 0 2px;
+  }
+  #notfound {
+    width: 50%;
+    margin: 50px auto;
+  }
+  #notfound h2 {
+    font-size: 54px;
+  }
+  #notfound span {
+    font-size: 218px;
+    line-height: 190px;
+  }
+  #res h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  #res h3 {
+    color: #4EA5D9;
+    font-size: 71px;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px 0 40px 0;
+    display: block;
   }
 }
 

@@ -768,6 +768,114 @@ footer {
   }
 }
 
+#notfound {
+  width: 100%;
+  margin: 0;
+  h2 {
+    margin-bottom: 0;
+    color: $sec-color;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 170px;
+    line-height: 140px;
+    text-align: center;
+    font-weight: 300;
+    display: block;
+    color: $primary-color;
+  }
+  p {
+   color: #707070;
+   &:first-of-type {
+     margin-top: 50px;
+     font-size: 20px;
+   }
+  }
+}
+
+#res {
+  margin: 50px auto;
+  h2 {
+    font-size: 24px;
+    color: $sec-color;
+    font-weight: normal;
+    strong {
+      font-weight: bold;
+    }
+  }
+  p {
+    color: #6D6767;
+    font-size: 20px;
+    span {
+      font-weight: bold;
+    }
+    &::first-of-type {
+      margin: 20px 0;
+    }
+  }
+  h3 {
+    display: none;
+  }
+  h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+    li {
+      p {
+        font-size: 14px;
+        color: #6d6767;
+        margin-bottom: .5rem;
+      }
+      margin-left: 15px;
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $sec-color;
+        border-radius: 50%;
+        bottom: 30%;
+        left: -15px;
+      }
+    }
+  }
+
+  form {
+    margin-top: 30px;
+    position: relative;
+    input {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: none;
+      &::active {
+        outline: $primary-color;
+      }
+      &::placeholder {
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+    button {
+      position: absolute;
+      right: 5%;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+
+
+
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
@@ -962,8 +1070,35 @@ footer {
       }
     }
   }
+  #notfound {
+    width: 50%;
+    margin: 50px auto;
+    h2 {
+      font-size: 54px;
+    }
+    span {
+      font-size: 218px;
+      line-height: 190px;
+    }
+  }
+
+  #res {
+    h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+    h3 {
+      color: $primary-color;
+      font-size: 71px;
+      font-weight: 300;
+      text-align: center;
+      margin: 30px 0 40px 0;
+      display: block;
+    }
+  }
  }
 
+ 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
