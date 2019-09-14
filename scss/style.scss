@@ -337,21 +337,22 @@ body {
 
 #sobre {
   margin-top: 40px;
-  h2 {
-    padding: 20px 20px 20px 0;
-    color: #333333;
-    font-weight: normal;
-    font-size: 28px;
-    span {
-      font-weight: bold;
-    }
-  } 
+  
   img {
     border-radius: 0;
   }
   .card {
     padding: 20px;
     border-radius: 0;
+    h2 {
+      padding: 20px 20px 20px 0;
+      color: #333333;
+      font-weight: normal;
+      font-size: 28px;
+      span {
+        font-weight: bold;
+      }
+    } 
   }
   .card-title {
     color: $primary-color;
@@ -506,7 +507,8 @@ footer {
       }
     }
     textarea {
-      height: 125px;
+      max-height: 125px;
+      min-height: 125px;
     }
     button {
       margin-top: 5px;
@@ -589,7 +591,7 @@ footer {
 
 
 // SERVIÇO
-.servico {
+.servico, #contact {
   h2 {
     font-size: 24px;
     color: $sec-color;
@@ -616,6 +618,11 @@ footer {
         background-color: #EEE;
         bottom: 0;
       }
+      &:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
       p, h4 {
         font-size: 18px;
       }
@@ -623,7 +630,7 @@ footer {
         color: $primary-color;
         font-weight: bold;
       }
-      p {
+      p.tel {
         position: relative;
         margin-left: 20px;
         padding-left: 5px;
@@ -636,6 +643,125 @@ footer {
           background: url(../assets/green-phone.svg) no-repeat;
           bottom: 15%;
           left: -20px;
+        }
+      }
+    }
+  }
+}
+
+#contato {
+  .contato {
+    h2 {
+      color: $sec-color;
+      text-align: left;
+      margin: 50px 0;
+    }
+    h3 {
+      color: $primary-color;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+    a {
+      color: $primary-color;
+    }
+    form {
+      margin-top: 15px;
+    }
+    input, textarea {
+      padding-left: 7px;
+      width: 100%;
+      margin: 5px 0;
+      color: #333333;
+      border: 1px solid #d1d1d1;
+      border-radius: 0;
+      &::placeholder {
+        font-size: 14px; 
+        color: #333333;
+        opacity: .9;
+      }
+    }
+    textarea {
+      max-height: 125px;
+      min-height: 125px;
+    }
+    button {
+      margin-top: 5px;
+      color: #FFF;
+      font-size: 14px;
+      background: $sec-color;
+      border: none;
+      padding: 5px 30px;
+      border-radius: 4px;
+    } 
+  }
+}
+
+#busca {
+  h2 {
+    color: $sec-color;
+    font-weight: normal;
+    padding: 0 15px;
+    margin: 50px 0;
+    text-align: left;
+    font-size: 24px;
+    strong {
+      font-weight: bold;
+    }
+  }
+  .result {
+    p {
+      padding: 0 15px;
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 40px;
+      span {
+        font-weight: bold;
+      }
+    }
+    .card {
+      flex-direction: column;
+      margin-bottom: 30px;
+      border: none;
+      .card-image {
+        position: relative;
+        span {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: $primary-color;
+          color: #FFF;
+          text-transform: uppercase;
+          padding: 5px 15px;
+          font-size: 15px;
+        }
+        .card-img-top {
+          border-radius: 0;
+        }
+      }
+      .card-body {
+        width: 100%;
+        position: relative;
+        .card-title {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .card-link {
+          color: $sec-color;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 6%;
+          display: none;
+          align-items: center;
+          &:hover span:last-child {
+            margin-left: 3px;
+            transition: all 100ms linear;
+          }
+        }
+        .tg {
+          display: none;
         }
       }
     }
@@ -676,12 +802,33 @@ footer {
     display: block;
   }
 
-  .servico {
+  .servico, #contato .contato, #busca .busca {
     h2 {
       font-size: 32px;
       text-align: center;
+      strong {
+        font-weight: bold;
+      }
+    }
+    h6 {
+      font-weight: normal;
+      font-size: 18px;
     }
   }
+  #busca {
+    h2 {
+      padding: 0;
+      text-align: center;
+      font-size: 32px;
+    }
+    .result {
+      p {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1024px) { 
@@ -773,6 +920,46 @@ footer {
     .end {
       flex-direction: row!important;
       justify-content: space-around;
+    }
+  }
+
+  #busca {
+    .result {
+      p {
+        color: #333;
+      }
+      .card {
+        flex-direction: row;
+        .card-body {
+          width: 50%;
+          position: relative;
+          .card-title {
+            font-weight: normal;
+            font-size: 24px;
+            margin-top: 5%;
+            color: #333;
+          }
+          .card-link {
+            display: flex;
+            align-items: center;
+            color: #333;
+          }
+          .tg {
+            position: absolute;
+            top: 0;
+            display: block;
+            span {
+              background: $primary-color;
+              color: #FFF;
+              text-transform: uppercase;
+              padding: 5px 15px;
+              font-size: 15px;
+              margin: 0 2px;
+            }
+         
+          }
+        }
+      }
     }
   }
  }
