@@ -10,7 +10,7 @@ function slideToggle() {
 
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $("#parceiros .owl-carousel").owlCarousel({
     items: 2,
     nav: true,
     autoplay: true,
@@ -23,5 +23,10 @@ $(document).ready(function(){
         items: 4
       }
     }
+  });
+
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    autoplay: true
   });
 });

@@ -899,7 +899,7 @@ footer .footer-info .end .info p {
   border-radius: 4px;
 }
 
-#busca h2 {
+#busca h2, #interna h2 {
   color: #19647E;
   font-weight: normal;
   padding: 0 15px;
@@ -908,22 +908,22 @@ footer .footer-info .end .info p {
   font-size: 24px;
 }
 
-#busca h2 strong {
+#busca h2 strong, #interna h2 strong {
   font-weight: bold;
 }
 
-#busca .result p {
+#busca .result p, #interna .result p {
   padding: 0 15px;
   font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
 }
 
-#busca .result p span {
+#busca .result p span, #interna .result p span {
   font-weight: bold;
 }
 
-#busca .result .card {
+#busca .result .card, #interna .result .card {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -932,11 +932,11 @@ footer .footer-info .end .info p {
   border: none;
 }
 
-#busca .result .card .card-image {
+#busca .result .card .card-image, #interna .result .card .card-image {
   position: relative;
 }
 
-#busca .result .card .card-image span {
+#busca .result .card .card-image span, #interna .result .card .card-image span {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -947,21 +947,21 @@ footer .footer-info .end .info p {
   font-size: 15px;
 }
 
-#busca .result .card .card-image .card-img-top {
+#busca .result .card .card-image .card-img-top, #interna .result .card .card-image .card-img-top {
   border-radius: 0;
 }
 
-#busca .result .card .card-body {
+#busca .result .card .card-body, #interna .result .card .card-body {
   width: 100%;
   position: relative;
 }
 
-#busca .result .card .card-body .card-title {
+#busca .result .card .card-body .card-title, #interna .result .card .card-body .card-title {
   font-weight: bold;
   font-size: 20px;
 }
 
-#busca .result .card .card-body .card-link {
+#busca .result .card .card-body .card-link, #interna .result .card .card-body .card-link {
   color: #19647E;
   font-size: 16px;
   font-weight: bold;
@@ -974,13 +974,13 @@ footer .footer-info .end .info p {
           align-items: center;
 }
 
-#busca .result .card .card-body .card-link:hover span:last-child {
+#busca .result .card .card-body .card-link:hover span:last-child, #interna .result .card .card-body .card-link:hover span:last-child {
   margin-left: 3px;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
-#busca .result .card .card-body .tg {
+#busca .result .card .card-body .tg, #interna .result .card .card-body .tg {
   display: none;
 }
 
@@ -1121,6 +1121,115 @@ footer .footer-info .end .info p {
   right: 5%;
   background: none;
   border: none;
+}
+
+#interna article {
+  margin: 20px auto;
+}
+
+#interna article h3 {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+#interna article h6 {
+  color: #19647E;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 15px;
+  font-weight: normal;
+}
+
+#interna article .tg {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#interna article .tg span {
+  background: #4EA5D9;
+  color: #FFF;
+  padding: 5px 15px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#interna article p {
+  margin: 25px 15px;
+}
+
+#interna article p:first-of-type {
+  margin: 30px 15px;
+}
+
+#interna article p.citacao {
+  margin: 0;
+  padding: 25px 30px 25px 90px;
+  background: #4EA5D9;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  font-weight: 500;
+}
+
+#interna article p.citacao::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: url("../assets/quotes.svg") no-repeat;
+  left: 10%;
+  top: 10%;
+}
+
+#interna article p.citacao span {
+  font-weight: lighter;
+}
+
+#interna article .galeria p {
+  margin: 5px 15px;
+  color: #4EA5D9;
+  font-size: 14px;
+}
+
+#interna article .share h4 {
+  text-align: center;
+  font-size: 24px;
+  color: #19647E;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#interna article .share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#interna article .share ul li {
+  margin: 5px 15px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #19647E;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 385px) {
