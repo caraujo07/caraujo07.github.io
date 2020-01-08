@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-  <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
-  <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker preset="hiro">
-        <a-box position='0 0.5 0' material='color: yellow;'></a-box>
-    </a-marker>
-    
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam;">
+    <a-marker preset="hiro">
       <a-entity obj-model=”obj: url(midnight.obj); 
-      mtl: url(midnight.mtl)”></a-entity>
-    </a-marker-camera>
-    </a-scene>
-  </body>
-</html>
+      mtl: url(midnight.mtl)”></a-entity>  
+    </a-marker>
+    <a-entity camera> </a-entity>
+  </a-scene>
+</body>
