@@ -22,230 +22,128 @@
 
     <title>Cartão JCCLUBE</title>
 
-    <style type="text/css">
-	/* entire container, keeps perspective */
-	.flip-container {
-		perspective: 1000px;
-		transform: rotate(90deg);
-	}
-
-	.flip-container,
-	.front,
-	.back {
-		width: 580px;
-		height: 320px;
-	}
-
-	/* flip speed goes here */
-	.flipper {
-		transition: 0.6s;
-		transform-style: preserve-3d;
-
-		position: relative;
-	}
-
-	/* hide back of pane during swap */
-	.front,
-	.back {
-		backface-visibility: hidden;
-
-		position: absolute;
-		top: 25px;
-		left: 25px;
-	}
-
-		
-	div.um {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		width: 580px;
-		height: 320px;
-		background-color: #b32828;
-		border-radius: 20px;
-		padding: 10px 20px;
-		font-size: initial;
-	}
-
-	div.verso {
-		width: 580px;
-		height: 320px;
-		border-radius: 20px;
-		background-color: #b32828;
-		color: #FFF;
-	}
-
-	div.um img {
-		border-radius: 20px;
-		align-self: center;
-	}
-	h3 {
-		color: #fff;
-		font-size: 1.4rem;
-		line-height: 1.2;
-	}
-	.info {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-	 }
-	
-	.info p {
-		color: #fff;
-	}
-	
-	.verso {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		padding-top: 100px;
-	}
-	
-	.verso .logo {
-		display: flex;
-		padding: 10px 0;
-		justify-content: center;
-		background-color: #FFF;
-	}
-	
-	.verso p, .verso h4, .verso h5 {
-		margin: 0;
-		margin-top: 0;
-		padding: 0;
-		color: #fff;
-	}
-	
-	.verso h6 { 
-		margin-top: 5px;
-	}
-	
-	.verso .infos { 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
 			
-	.vertical.flip-container {
-		position: relative;
-	}
+			.flip-card {
+				background-color: transparent;
+				width: 570px;
+				height: 300px;
+				perspective: 1000px;
+				transform: translate(5px, -300px) rotate(90deg);
+				transform-origin: 0 300px;
+				padding: 5px;
+			}
+			
+			.flip-card-inner {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				transition: transform 0.6s;
+				transform-style: preserve-3d;
+				border-radius: 20px;
+			}
+			
+			.flip-card.hover .flip-card-inner {
+				transform: rotateX(180deg);
+			}
+			
+			.flip-card-front, .flip-card-back {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				border-radius: 20px;
+			}
+			
+			.flip-card-front {
+				background-color: #b32828;
+				color: #fff;
+				padding: 10px;
+			}
+			
+			.flip-card-back {
+				background-color: #b32828;
+				color: white;
+				transform: rotateX(180deg);
+			}
 
-	.vertical .back {
-		transform: rotateX(180deg);
-	}
 
-	.vertical.flip-container .flipper {
-		transform-origin: 100% 185px; /* half of height */
-	}
+			.flip-card-front .name {
+				text-align: left;
+				margin: 20px;
+				font-size: 1.5rem;
+			}
 
-	.vertical.flip-container.hover .flipper {
-		transform: rotateX(-180deg);
-	}
+			.flip-card-front .info {
+				display: flex;
+				justify-content: space-between;
+				margin: 0 20px;
+			}
 
-	.vertical.flip-container.mobile {
-		transform-origin: 185px;
-	}
+			.flip-card-back .logo {
+				background: #FFF;
+				margin-top: 70px;
+			}
 
+			.flip-card-back .infos h3 {
+				margin-top: 5px;
+			}
 
-	@media only screen and (max-width: 1024px) {
-		.desk {
-			display: none;
-		}
-		div.um {
-			height: 320px;
-		}
-		.back .verso {
-			height: 320px !important;
-		}
-		.infos h4 {
-			font-size: 1rem;
-		}
-	}
-	@media only screen and (min-width: 1000px) {
-		.mobile {
-			/* display: none; */
-		}
-	}
-    </style>
+			.flip-card-back .infos h4 {
+				font-size: 1rem;
+				margin-bottom: -15px;
+			}
+
+			@media only screen and (orientation:landscape) {
+				.flip-card {
+					transform: initial;
+				}
+			}
+			</style>
   </head>
 
   <body>
-
-<div class="desk">
-
-	<div class="um">
-		<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
-	</br>
-	<p><h3>Jefferson da Silva Azevedo</h3></p>
-	
-	
-	<div class="info"> 
-		<p><span algin="left">123456789</span></p> 
-		<p><span algin="right">VALIDADE: 11/02/2050</span></p>
-	</div>
-	
-</div>
-
-</br>
-
-	<div class="verso">
-		<div class="logo">
-			<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
-		</div>
-		<div class="infos">
-			<h3>Atendimento ao leitor</h6>
-			<h4>Grande Recife - (81) 3413.6100</p>
-			<h4>Demais localidades - 0800.081.5100</p>
-			<h4>www.jcclube.com</p>
-		</div>
-	</div>
-				
-</div>
-
-
-    <div class="vertical flip-container mobile">
-      <div class="flipper">
-        <div class="front">
-        <div class="um">
-						
-					<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+					<div class="avatar">
+						<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
 						</br>
-						<p><h3>Jefferson da Silva Azevedo</h3></p>
-						
-						
+						<h3 class="name">Jefferson da Silva Azevedo</h3>
 						<div class="info"> 
 							<p><span algin="left">123456789</span></p> 
 							<p><span algin="right">VALIDADE: 11/02/2050</span></p>
-						</div> 
-					
 						</div>
-						
-        	</div>
-        <div class="back">
-          <div class="verso">
-						 <div class="logo">
+					</div>
+      	</div>
+					<div class="flip-card-back">
+						<div class="logo">
 							<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
 						</div>
 						<div class="infos">
-							<h3>Atendimento ao leitor</h6>
+							<h3>Atendimento ao Leitor</h6>
 							<h4>Grande Recife - (81) 3413.6100</p>
 							<h4>Demais localidades - 0800.081.5100</p>
 							<h4>www.jcclube.com</p>
-						</div> 
+						</div>
 					</div>
-        </div>
-      </div>
     </div>
 
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-
-	<script>
-		$('.vertical').click(function () {
-			$(this).toggleClass('hover');
-		})
-	</script>
+    <script>
+      $(".flip-card").click(function() {
+        $(this).toggleClass("hover");
+      });
+    </script>
   </body>
 </html>
