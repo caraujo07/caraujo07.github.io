@@ -99,16 +99,77 @@
 				margin-bottom: -15px;
 			}
 
+			.desk .flip-card-front, .desk .flip-card-back {
+				max-width: 580px;
+				max-height: 320px;
+			}
+
+			.desk .flip-card-back {
+				margin-top: 330px;
+				transform: none;
+			}
+
+			.desk .flip-card-front .name {
+				margin-top: 30px;
+			}
+
+			.desk .flip-card-front .info {
+				margin-top: 40px;
+			}
+
+			.desk .flip-card-back .infos {
+				text-align: center;
+				margin-top: 20px;
+			}
+
 			@media only screen and (orientation:landscape) {
 				.flip-card {
 					transform: initial;
+				}
+			}
+			@media only screen and (min-width: 769px) {
+				.flip-card {
+					display: none;
+				}
+			}
+
+			@media only screen and (max-width: 768px) {
+				.desk {
+					display: none;
 				}
 			}
 			</style>
   </head>
 
   <body>
-    <div class="flip-card">
+		<div class="desk">
+
+			<div class="flip-card-front">
+				<div class="avatar">
+					<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
+				</br>
+				<h3 class="name">Jefferson da Silva Azevedo</h3>
+				<div class="info"> 
+					<p><span algin="left">123456789</span></p> 
+					<p><span algin="right">VALIDADE: 11/02/2050</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="flip-card-back">
+			<div class="logo">
+				<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
+			</div>
+			<div class="infos">
+				<h3>Atendimento ao Leitor</h6>
+					<h4>Grande Recife - (81) 3413.6100</p>
+						<h4>Demais localidades - 0800.081.5100</p>
+							<h4>www.jcclube.com</p>
+							</div>
+						</div>
+						
+					</div>
+						
+		<div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
 					<div class="avatar">
@@ -121,18 +182,19 @@
 						</div>
 					</div>
       	</div>
-					<div class="flip-card-back">
-						<div class="logo">
-							<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
-						</div>
-						<div class="infos">
-							<h3>Atendimento ao Leitor</h6>
-							<h4>Grande Recife - (81) 3413.6100</p>
-							<h4>Demais localidades - 0800.081.5100</p>
-							<h4>www.jcclube.com</p>
-						</div>
+				<div class="flip-card-back">
+					<div class="logo">
+						<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
 					</div>
-    </div>
+					<div class="infos">
+						<h3>Atendimento ao Leitor</h6>
+						<h4>Grande Recife - (81) 3413.6100</p>
+						<h4>Demais localidades - 0800.081.5100</p>
+						<h4>www.jcclube.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
