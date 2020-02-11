@@ -1,32 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GeoAR.js demo</title>
-    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script>
-      THREEx.ArToolkitContext.baseURL =
-        "https://raw.githack.com/jeromeetienne/ar.js/master/three.js/";
-    </script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://jconline.ne10.uol.com.br/img/jc_57.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Cartão JCCLUBE</title>
+
+    <style type="text/css">
+	/* entire container, keeps perspective */
+	.flip-container {
+		perspective: 1000px;
+		transform: rotate(90deg);
+	}
+
+	.flip-container,
+	.front,
+	.back {
+		width: 580px;
+		height: 320px;
+	}
+
+	/* flip speed goes here */
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+
+		position: relative;
+	}
+
+	/* hide back of pane during swap */
+	.front,
+	.back {
+		backface-visibility: hidden;
+
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
+
+		
+	div.um {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		width: 580px;
+		height: 370px;
+		border-style: solid;
+		border-color: #f00;
+		background-color: #b32828;
+		border-radius: 20px;
+		padding: 10px 20px;
+		font-size: initial;
+	}
+
+	div.verso {
+		width: 580px;
+		height: 370px;
+		border-radius: 20px;
+		background-color: #b32828;
+		color: #FFF;
+	}
+
+	div.um img {
+		border-radius: 20px;
+		align-self: center;
+	}
+	h3 {
+		color: #fff;
+		font-size: 1.4rem;
+		line-height: 1.2;
+	}
+	.info {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	 }
+	
+	.info p {
+		color: #fff;
+	}
+	
+	.verso {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 100px;
+	}
+	
+	.verso .logo {
+		display: flex;
+		padding: 10px 0;
+		justify-content: center;
+		background-color: #FFF;
+	}
+	
+	.verso p, .verso h4, .verso h5 {
+		margin: 0;
+		margin-top: 0;
+		padding: 0;
+		color: #fff;
+	}
+	
+	.verso h6 { 
+		margin-top: 5px;
+	}
+	
+	.verso .infos { 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+			
+	.vertical.flip-container {
+		position: relative;
+	}
+
+	.vertical .back {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.flip-container .flipper {
+		transform-origin: 100% 185px; /* half of height */
+	}
+
+	.vertical.flip-container:hover .flipper {
+		transform: rotateX(-180deg);
+	}
+
+	.vertical.flip-container.mobile {
+		transform-origin: 185px;
+	}
+
+
+	@media only screen and (max-width: 999px) {
+		.desk {
+			display: none;
+		}
+		div.um {
+			height: 320px;
+		}
+	}
+	@media only screen and (min-width: 1000px) {
+		.mobile {
+			display: none;
+		}
+	}
+    </style>
   </head>
 
-  <!-- include GeoAR.js -->
-  <link rel="stylesheet" href="./index.css" />
+  <body>
 
-  <!-- Dynamically add places from Javascript -->
-  <script src="./places.js"></script>
+<div class="desk">
 
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"
-      raycaster="objects: [gps-entity-place];"
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
-    >
-      <a-camera gps-camera="minDistance: 20;" rotation-reader> </a-camera>
-    </a-scene>
+	<div class="um">
+		<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
+	</br>
+	<p><h3>Jefferson da Silva Azevedo</h3></p>
+	
+	
+	<div class="info"> 
+		<p><span algin="left">123456789</span></p> 
+		<p><span algin="right">VALIDADE: 11/02/2050</span></p>
+	</div>
+	
+</div>
+
+</br>
+
+	<div class="verso">
+		<div class="logo">
+			<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
+		</div>
+		<div class="infos">
+			<h3>Atendimento ao leitor</h6>
+			<h4>Grande Recife - (81) 3413.6100</p>
+			<h4>Demais localidades - 0800.081.5100</p>
+			<h4>www.jcclube.com</p>
+		</div>
+	</div>
+				
+</div>
+
+
+    <div class="vertical flip-container mobile" onclick="this.classList.toggle('click');">
+      <div class="flipper">
+        <div class="front">
+          <div class="um">
+						
+						<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
+						</br>
+						<p><h3>Jefferson da Silva Azevedo</h3></p>
+						
+						
+						<div class="info"> 
+							<p><span algin="left">123456789</span></p> 
+							<p><span algin="right">VALIDADE: 11/02/2050</span></p>
+						</div>
+						
+						</div>
+        	</div>
+        <div class="back">
+          <div class="verso">
+						<div class="logo">
+							<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
+						</div>
+						<div class="infos">
+							<h3>Atendimento ao leitor</h6>
+							<h4>Grande Recife - (81) 3413.6100</p>
+							<h4>Demais localidades - 0800.081.5100</p>
+							<h4>www.jcclube.com</p>
+						</div>
+					</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+
+		<div class="um">
+			
+			<img src="https://servicos.jcclube.jc.com.br/cartao/logo1.png" width="500" align="center"/>
+			</br>
+			<p><h3>Jefferson da Silva Azevedo</h3></p>
+			
+			
+			<div class="info"> 
+				<p><span algin="left">123456789</span></p> 
+				<p><span algin="right">VALIDADE: 11/02/2050</span></p>
+			</div>
+			
+			</div>
+		</br>
+		
+		<div class="verso">
+			<div class="logo">
+				<img height="100" src="http://jconlinedigital.ne10.uol.com.br/web/imagens/logo.png" align="center"/>
+			</div>
+			<div class="infos">
+				<h3>Atendimento ao leitor</h6>
+				<h4>Grande Recife - (81) 3413.6100</p>
+				<h4>Demais localidades - 0800.081.5100</p>
+				<h4>www.jcclube.com</p>
+			</div>
+		</div>
+			
+	</div>
+</div>
+   
+</br>
+<div style="page-break-after: always"></div>
+	</br> -->
   </body>
 </html>
